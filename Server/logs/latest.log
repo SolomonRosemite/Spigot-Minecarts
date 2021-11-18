@@ -1,0 +1,468 @@
+[21:03:42] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[21:03:43] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[21:03:44] [Worker-Main-11/INFO]: Loaded 7 recipes
+[21:03:46] [Server thread/INFO]: Starting minecraft server version 1.17.1
+[21:03:46] [Server thread/INFO]: Loading properties
+[21:03:47] [Server thread/INFO]: This server is running CraftBukkit version 3279-Spigot-3892929-2071671 (MC: 1.17.1) (Implementing API version 1.17.1-R0.1-SNAPSHOT)
+[21:03:47] [Server thread/INFO]: Debug logging is disabled
+[21:03:47] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:03:47] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:03:47] [Server thread/INFO]: Default game type: SURVIVAL
+[21:03:47] [Server thread/INFO]: Generating keypair
+[21:03:47] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:03:47] [Server thread/INFO]: Using default channel type
+[21:03:48] [Server thread/INFO]: [Minecarts] Loading Minecarts v1.0-SNAPSHOT
+[21:03:48] [Server thread/INFO]: [AutoPluginLoader] Loading AutoPluginLoader v1.2.6
+[21:03:48] [Server thread/INFO]: Preparing level "world"
+[21:03:48] [Server thread/INFO]: -------- World Settings For [world] --------
+[21:03:48] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[21:03:48] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[21:03:48] [Server thread/INFO]: Experience Merge Radius: 3.0
+[21:03:48] [Server thread/INFO]: Mob Spawn Range: 6
+[21:03:48] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Cane Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Melon Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Potato Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Vine Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[21:03:48] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[21:03:48] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Bastion: 30084232 Fortress: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[21:03:48] [Server thread/INFO]: Max TNT Explosions: 100
+[21:03:48] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[21:03:48] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[21:03:48] [Server thread/INFO]: View Distance: 10
+[21:03:48] [Server thread/INFO]: Item Despawn Rate: 6000
+[21:03:48] [Server thread/INFO]: Item Merge Radius: 2.5
+[21:03:48] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[21:03:48] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[21:03:48] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[21:03:48] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[21:03:48] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[21:03:48] [Server thread/INFO]: Experience Merge Radius: 3.0
+[21:03:48] [Server thread/INFO]: Mob Spawn Range: 6
+[21:03:48] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Cane Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Melon Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Potato Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Vine Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[21:03:48] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[21:03:48] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Bastion: 30084232 Fortress: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[21:03:48] [Server thread/INFO]: Max TNT Explosions: 100
+[21:03:48] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[21:03:48] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[21:03:48] [Server thread/INFO]: View Distance: 10
+[21:03:48] [Server thread/INFO]: Item Despawn Rate: 6000
+[21:03:48] [Server thread/INFO]: Item Merge Radius: 2.5
+[21:03:48] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[21:03:48] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[21:03:48] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[21:03:48] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[21:03:48] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[21:03:48] [Server thread/INFO]: Experience Merge Radius: 3.0
+[21:03:48] [Server thread/INFO]: Mob Spawn Range: 6
+[21:03:48] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Cane Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Melon Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Potato Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Vine Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[21:03:48] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[21:03:48] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[21:03:48] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Bastion: 30084232 Fortress: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[21:03:48] [Server thread/INFO]: Max TNT Explosions: 100
+[21:03:48] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[21:03:48] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[21:03:48] [Server thread/INFO]: View Distance: 10
+[21:03:48] [Server thread/INFO]: Item Despawn Rate: 6000
+[21:03:48] [Server thread/INFO]: Item Merge Radius: 2.5
+[21:03:48] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[21:03:48] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[21:03:48] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:03:49] [Worker-Main-13/INFO]: Preparing spawn area: 0%
+[21:03:49] [Worker-Main-12/INFO]: Preparing spawn area: 0%
+[21:03:49] [Worker-Main-11/INFO]: Preparing spawn area: 0%
+[21:03:54] [Worker-Main-12/INFO]: Preparing spawn area: 0%
+[21:03:54] [Worker-Main-13/INFO]: Preparing spawn area: 0%
+[21:03:54] [Worker-Main-12/INFO]: Preparing spawn area: 0%
+[21:03:54] [Worker-Main-13/INFO]: Preparing spawn area: 0%
+[21:03:54] [Worker-Main-12/INFO]: Preparing spawn area: 0%
+[21:03:54] [Worker-Main-13/INFO]: Preparing spawn area: 0%
+[21:03:54] [Worker-Main-12/INFO]: Preparing spawn area: 0%
+[21:03:54] [Worker-Main-13/INFO]: Preparing spawn area: 0%
+[21:03:54] [Worker-Main-12/INFO]: Preparing spawn area: 0%
+[21:03:54] [Worker-Main-11/INFO]: Preparing spawn area: 18%
+[21:03:55] [Worker-Main-10/INFO]: Preparing spawn area: 65%
+[21:03:55] [Worker-Main-14/INFO]: Preparing spawn area: 70%
+[21:03:56] [Worker-Main-13/INFO]: Preparing spawn area: 83%
+[21:03:56] [Worker-Main-9/INFO]: Preparing spawn area: 86%
+[21:03:57] [Worker-Main-14/INFO]: Preparing spawn area: 93%
+[21:03:57] [Server thread/INFO]: Time elapsed: 8978 ms
+[21:03:57] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[21:03:57] [Worker-Main-13/INFO]: Preparing spawn area: 0%
+[21:03:58] [Worker-Main-14/INFO]: Preparing spawn area: 0%
+[21:03:58] [Worker-Main-8/INFO]: Preparing spawn area: 4%
+[21:03:59] [Worker-Main-12/INFO]: Preparing spawn area: 47%
+[21:03:59] [Worker-Main-13/INFO]: Preparing spawn area: 75%
+[21:04:00] [Worker-Main-11/INFO]: Preparing spawn area: 85%
+[21:04:00] [Worker-Main-10/INFO]: Preparing spawn area: 92%
+[21:04:01] [Server thread/INFO]: Time elapsed: 3402 ms
+[21:04:01] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[21:04:01] [Worker-Main-13/INFO]: Preparing spawn area: 0%
+[21:04:01] [Worker-Main-12/INFO]: Preparing spawn area: 7%
+[21:04:02] [Worker-Main-12/INFO]: Preparing spawn area: 87%
+[21:04:02] [Server thread/INFO]: Time elapsed: 1125 ms
+[21:04:02] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:04:02] [Server thread/INFO]: [AutoPluginLoader] Enabling AutoPluginLoader v1.2.6
+[21:04:02] [Server thread/INFO]: [AutoPluginLoader] Plugin has successfully loaded. (Took 25ms)
+[21:04:02] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:04:02] [Server thread/INFO]: Done (14.064s)! For help, type "help"
+[21:04:08] [User Authenticator #1/INFO]: UUID of player JesseFaithful is 1eb861b6-bc3c-49be-ad02-b336095e1daf
+[21:04:08] [Server thread/INFO]: JesseFaithful[/127.0.0.1:49191] logged in with entity id 62 at ([world]-734.0353314785812, 64.0, -160.60592408671687)
+[21:04:36] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:04:36] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:04:36] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:04:36] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:04:36] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:04:36] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:04:36] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:04:36] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[21:04:36] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:04:36] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:04:36] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:04:36] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 193ms)
+[21:04:43] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:04:43] [Server thread/INFO]: [Log]: ?????
+[21:04:43] [Server thread/INFO]: [Log]: Location{world=CraftWorld{name=world},x=-734.0353314785812,y=64.0,z=-160.60592408671687,pitch=0.79839224,yaw=98.95342}
+[21:04:58] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:04:58] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:04:58] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:04:58] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:04:58] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:04:58] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:04:58] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:04:58] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[21:04:58] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:04:58] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:04:58] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:04:58] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 115ms)
+[21:05:04] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:05:04] [Server thread/INFO]: [Log]: ?????
+[21:05:04] [Server thread/INFO]: [Log]: p.getLocation()
+[21:05:22] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:05:22] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:05:22] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:05:22] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:05:22] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:05:22] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:05:22] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:05:22] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[21:05:22] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:05:22] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:05:22] [Server thread/INFO]: [Log]: Test Messageeeeeeeeeeee!
+[21:05:22] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 128ms)
+[21:05:32] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:05:32] [Server thread/INFO]: [Log]: Location{world=CraftWorld{name=world},x=-734.0353314785812,y=64.0,z=-160.60592408671687,pitch=0.99682015,yaw=94.836464}
+[21:06:03] [Server thread/INFO]: JesseFaithful issued server command: /
+[21:06:05] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:06:05] [Server thread/INFO]: [Log]: Location{world=CraftWorld{name=world},x=-735.4989789482765,y=64.0,z=-160.5815538392204,pitch=90.0,yaw=116.6122}
+[21:06:17] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:06:17] [Server thread/INFO]: [Log]: Location{world=CraftWorld{name=world},x=-735.4989789482765,y=64.0,z=-160.5815538392204,pitch=90.0,yaw=178.574}
+[21:15:46] [Server thread/INFO]: JesseFaithful issued server command: /spawnpoint JesseFaithful -735 63 -161
+[21:15:46] [Server thread/INFO]: [JesseFaithful: Set spawn point to -735, 63, -161 [0.0] in minecraft:overworld for JesseFaithful]
+[21:15:55] [Server thread/INFO]: JesseFaithful issued server command: /kill @e
+[21:15:55] [Server thread/INFO]: JesseFaithful fell out of the world
+[21:15:55] [Server thread/INFO]: [JesseFaithful: Killed 283 entities]
+[21:16:50] [Server thread/INFO]: JesseFaithful issued server command: /locate village
+[21:16:53] [Server thread/INFO]: JesseFaithful issued server command: /tp @s -1008 ~ 368
+[21:16:53] [Server thread/INFO]: [JesseFaithful: Teleported JesseFaithful to -1007.500000, 109.352080, 368.500000]
+[21:17:27] [Server thread/INFO]: JesseFaithful issued server command: /locatebiome minecraft:plains
+[21:17:32] [Server thread/INFO]: JesseFaithful issued server command: /tp @s -1048 ~ 388ä
+[21:17:34] [Server thread/INFO]: JesseFaithful issued server command: /tp @s -1048 ~ 388
+[21:17:34] [Server thread/INFO]: [JesseFaithful: Teleported JesseFaithful to -1047.500000, 109.352080, 388.500000]
+[21:17:34] [Server thread/WARN]: JesseFaithful moved too quickly! -34.12623875548968,0.0,28.95717345937271
+[21:31:32] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:31:32] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:31:32] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:31:32] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:31:32] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[21:31:32] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 148ms)
+[21:31:46] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:31:46] [Server thread/INFO]: [Log]: -0.9954233992512593,0.04340426640087408,-0.08513710049837299
+[21:32:26] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:32:26] [Server thread/INFO]: [Log]: -6.120184172681983E-17,-1.0,1.9323627764836444E-18
+[21:32:50] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:32:50] [Server thread/INFO]: [Log]: 7.562922584395986E-19,-1.0,6.122766922457909E-17
+[21:33:22] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:33:22] [Server thread/INFO]: [Log]: -6.123163340274748E-17,-1.0,-2.9415554759832503E-19
+[21:33:34] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:33:34] [Server thread/INFO]: [Log]: 6.123232621166353E-17,-1.0,-4.102880777349802E-20
+[21:33:45] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:33:45] [Server thread/INFO]: [Log]: 0.971812409867206,0.23570586900393303,-0.004835632863929021
+[21:33:56] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:33:56] [Server thread/INFO]: [Log]: 6.123233883169861E-17,1.0,1.1741154064535607E-20
+[21:34:09] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:34:09] [Server thread/INFO]: [Log]: 0.9962882781821042,0.08146390743463029,0.02780824594289103
+[21:34:27] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:34:27] [Server thread/INFO]: [Log]: 0.6569932093622097,0.03219579369770995,-0.7532087052869996
+[21:35:43] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:35:43] [Server thread/INFO]: [Log]: 0.9955428235014251,0.09267698244238724,0.0174775141305612
+[21:35:51] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:35:51] [Server thread/INFO]: [Log]: 0.0029824928877957356,0.06246490028825173,-0.9980427049821832
+[21:36:03] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:36:03] [Server thread/INFO]: [Log]: -0.9993065039518748,0.03479189339923924,0.013267830010128599
+[21:37:02] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:37:02] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:37:02] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:37:02] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:37:02] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[21:37:02] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 134ms)
+[21:37:05] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:37:05] [Server thread/INFO]: [Log]: -1
+[21:37:08] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:37:08] [Server thread/INFO]: [Log]: -1
+[21:37:11] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:37:11] [Server thread/INFO]: [Log]: 0
+[21:37:15] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:37:15] [Server thread/INFO]: [Log]: 0
+[21:37:19] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:37:19] [Server thread/INFO]: [Log]: -1
+[21:37:23] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:37:23] [Server thread/INFO]: [Log]: 0
+[21:37:26] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:37:26] [Server thread/INFO]: [Log]: -1
+[21:37:29] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:37:29] [Server thread/INFO]: [Log]: -1
+[21:37:33] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:37:33] [Server thread/INFO]: [Log]: -1
+[21:37:35] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:37:35] [Server thread/INFO]: [Log]: -1
+[21:37:38] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:37:38] [Server thread/INFO]: [Log]: 0
+[21:37:41] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:37:41] [Server thread/INFO]: [Log]: -1
+[21:38:15] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:38:15] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:38:15] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:38:15] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:38:15] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[21:38:15] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 126ms)
+[21:38:16] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:38:16] [Server thread/INFO]: [Log]: 0
+[21:38:19] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:38:19] [Server thread/INFO]: [Log]: -1
+[21:38:22] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:38:22] [Server thread/INFO]: [Log]: -1
+[21:38:24] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:38:24] [Server thread/INFO]: [Log]: -1
+[21:40:01] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:40:01] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:40:01] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:40:01] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:40:01] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[21:40:01] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 122ms)
+[21:40:04] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:40:04] [Server thread/INFO]: [Log]: -0.9303723729065474,-0.36119561835071734,-0.06280902018407221
+[21:48:20] [Server thread/INFO]: JesseFaithful issued server command: /weather clear
+[21:48:20] [Server thread/INFO]: [JesseFaithful: Set the weather to clear]
+[21:51:57] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:51:57] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:51:57] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:51:57] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:51:57] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[21:51:57] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 131ms)
+[21:52:05] [Server thread/INFO]: JesseFaithful issued server command: /weather clear
+[21:52:05] [Server thread/INFO]: [JesseFaithful: Set the weather to clear]
+[21:52:08] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:52:08] [Server thread/INFO]: [Log]: -0.9749810369250056,-0.22137469447353547,-0.02013013371514566
+[21:52:17] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:52:17] [Server thread/INFO]: [Log]: -0.9994115939029279,-0.012829595098174145,-0.031809864225207346
+[21:52:23] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:52:23] [Server thread/INFO]: [Log]: -0.43296950149275587,-0.8999674248225458,0.05095139875793356
+[21:52:57] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:52:57] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:52:57] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:52:57] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:52:57] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[21:52:57] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 131ms)
+[21:53:02] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:53:02] [Server thread/INFO]: [Log]: -6.112242664799993E-17,-1.0,3.667208381659352E-18
+[21:53:25] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:53:25] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:53:25] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:53:25] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:53:25] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[21:53:25] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 117ms)
+[21:53:27] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:53:27] [Server thread/INFO]: [Log]: -0.07351293625748315,-0.9972932966922274,-0.0013887316342692517
+[21:53:27] [Server thread/INFO]: [Log]: 0.0,0.0,0.0
+[21:54:03] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:54:03] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:54:03] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:54:03] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:54:03] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[21:54:03] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 129ms)
+[21:54:06] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:54:06] [Server thread/INFO]: [Log]: -6.120563589968877E-17,-1.0,1.8082009759351148E-18
+[21:54:06] [Server thread/INFO]: [Log]: -1
+[21:54:06] [Server thread/INFO]: [Log]: 0
+[21:54:06] [Server thread/INFO]: [Log]: 0.0,0.0,0.0
+[21:54:16] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:54:16] [Server thread/INFO]: [Log]: -6.120563589968877E-17,-1.0,1.8082009759351148E-18
+[21:54:16] [Server thread/INFO]: [Log]: -1
+[21:54:16] [Server thread/INFO]: [Log]: 0
+[21:54:16] [Server thread/INFO]: [Log]: 0.0,0.0,0.0
+[21:54:43] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:54:43] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:54:43] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[21:54:43] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[21:54:43] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[21:54:43] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 131ms)
+[21:54:47] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:54:47] [Server thread/INFO]: [Log]: -6.058487949031807E-17,-1.0,8.8809815785352E-18
+[21:54:47] [Server thread/INFO]: [Log]: -1
+[21:54:47] [Server thread/INFO]: [Log]: 0
+[21:54:47] [Server thread/INFO]: [Log]: 0.0,0.0,0.0
+[21:54:59] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:54:59] [Server thread/INFO]: [Log]: -0.9919696097683578,0.12591301460276996,-0.011925017805212254
+[21:54:59] [Server thread/INFO]: [Log]: -1
+[21:54:59] [Server thread/INFO]: [Log]: 0
+[21:54:59] [Server thread/INFO]: [Log]: 0.0,0.0,0.0
+[21:55:02] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:55:02] [Server thread/INFO]: [Log]: 0.9950545195253293,-0.008822567886846116,-0.09893768477227478
+[21:55:02] [Server thread/INFO]: [Log]: 1
+[21:55:02] [Server thread/INFO]: [Log]: 0
+[21:55:02] [Server thread/INFO]: [Log]: 0.0,0.0,0.0
+[21:55:07] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:55:07] [Server thread/INFO]: [Log]: 0.5766698976993002,-0.21070487502691326,-0.7893385108604366
+[21:55:07] [Server thread/INFO]: [Log]: 0
+[21:55:07] [Server thread/INFO]: [Log]: -1
+[21:55:07] [Server thread/INFO]: [Log]: -2.0,0.0,-1.0
+[21:55:11] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[21:55:11] [Server thread/INFO]: [Log]: 0.9097339696731677,-0.15538397013111663,-0.385019384250965
+[21:55:11] [Server thread/INFO]: [Log]: 1
+[21:55:11] [Server thread/INFO]: [Log]: 0
+[21:55:11] [Server thread/INFO]: [Log]: 0.0,0.0,0.0
+[21:57:18] [Server thread/INFO]: JesseFaithful issued server command: /weather clear
+[21:57:18] [Server thread/INFO]: [JesseFaithful: Set the weather to clear]
+[22:00:50] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:00:50] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:00:50] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:00:50] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:00:50] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[22:00:50] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 127ms)
+[22:00:52] [Server thread/INFO]: JesseFaithful issued server command: /weather clear
+[22:00:52] [Server thread/INFO]: [JesseFaithful: Set the weather to clear]
+[22:00:58] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[22:01:14] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:01:14] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:01:14] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:01:14] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:01:14] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[22:01:14] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 124ms)
+[22:01:17] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[22:01:25] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[22:02:58] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:02:58] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:02:58] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:02:58] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:02:58] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[22:02:58] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 143ms)
+[22:03:01] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[22:03:13] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:03:13] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:03:13] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:03:13] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:03:13] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[22:03:13] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 125ms)
+[22:03:19] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[22:03:19] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[22:04:14] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:04:14] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:04:14] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:04:14] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:04:14] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[22:04:14] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 130ms)
+[22:04:21] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[22:05:16] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:05:16] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:05:16] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:05:16] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:05:16] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[22:05:16] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 127ms)
+[22:05:20] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[22:06:40] [Server thread/INFO]: JesseFaithful issued server command: /gamerule doWeatherCycle false
+[22:06:40] [Server thread/INFO]: [JesseFaithful: Gamerule doWeatherCycle is now set to: false]
+[22:06:49] [Server thread/INFO]: JesseFaithful issued server command: /weather clear
+[22:06:49] [Server thread/INFO]: [JesseFaithful: Set the weather to clear]
+[22:07:04] [Server thread/INFO]: JesseFaithful issued server command: /difficulty peaceful
+[22:07:04] [Server thread/INFO]: [JesseFaithful: The difficulty has been set to Peaceful]
+[22:20:44] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:20:44] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:20:44] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:20:44] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:20:44] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[22:20:44] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 144ms)
+[22:20:48] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[22:21:08] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:21:08] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:21:08] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:21:08] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:21:08] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[22:21:08] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 135ms)
+[22:21:10] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[22:21:16] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[22:21:26] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:21:26] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:21:26] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:21:26] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0-SNAPSHOT
+[22:21:26] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0-SNAPSHOT
+[22:21:26] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 131ms)
+[22:21:28] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[22:22:27] [Server thread/INFO]: JesseFaithful lost connection: Disconnected
+[22:22:27] [Server thread/INFO]: JesseFaithful left the game
+[22:22:31] [Server thread/INFO]: Stopping the server
+[22:22:31] [Server thread/INFO]: Stopping server
+[22:22:31] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0-SNAPSHOT
+[22:22:31] [Server thread/INFO]: [AutoPluginLoader] Disabling AutoPluginLoader v1.2.6
+[22:22:31] [Server thread/INFO]: Saving players
+[22:22:31] [Server thread/INFO]: Saving worlds
+[22:22:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[22:22:32] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[22:22:32] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[22:22:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[22:22:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:22:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22:22:32] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved

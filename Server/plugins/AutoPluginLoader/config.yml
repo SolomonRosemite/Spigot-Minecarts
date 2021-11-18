@@ -1,0 +1,64 @@
+# Developed by PCPSells
+messages:
+    Plugin-Automatically-Updated: '&8(&bAPL&8) &a%plugin% &fhas been automatically updated! &7(Took %time%ms)'
+    Plugin-Automatically-Loaded: '&8(&bAPL&8) &a%plugin% &fhas been automatically loaded! &7(Took %time%ms)'
+    # To receive these messages, you will need the permission: "AutoPluginLoader.Alerts"
+    Header: '&8&m+-----------------&8( &bAPL &8)&m-----------------+'
+    Footer: '&8&m+---------------------------------------+'
+    Config-Reloaded: '&8(&bAPL&8) &fThe config.yml has &asuccessfully &fbeen reloaded.'
+    No-Permission: '&8(&bAPL&8) &fSorry, but you don''t have permission to do that.'
+    Command-Format: '&8• &e/%command% &8» &f%description%'
+    Cant-Put-APL-There: '&8(&bAPL&8) &fSorry, but you can''t use &aAutoPluginLoader &fas a plugin argument.'
+    Invalid-Plugin: '&8(&bAPL&8) &fSorry, but the plugin &a%plugin% &fisn''t a plugin on this server.'
+    No-Description: '&8(&bAPL&8) &fSorry, but the plugin &a%plugin% &fhas no plugin description.'
+    Already-Loaded: '&8(&bAPL&8) &fSorry, but &a%plugin% &fis already loaded.'
+    Already-Unloaded: '&8(&bAPL&8) &fSorry, but &a%plugin% &fis already unloaded.'
+    Failed-To-Load: '&8(&bAPL&8) &fFailed to load &a%plugin%&f. &7(Check console for details)'
+    Plugin-Is-Reloading: '&8(&bAPL&8) &fPlugin &a%plugin% &fis &creloading&f.'
+    Plugin-Has-Reloaded: '&8(&bAPL&8) &fPlugin &a%plugin% &fhas been &areloaded.'
+    Plugin-Loaded: '&8(&bAPL&8) &fPlugin &a%plugin% &fhas been &aenabled&f.'
+    Plugin-Unloaded: '&8(&bAPL&8) &fPlugin &a%plugin% &fhas been &cdisabled&f.'
+    Plugin-Unloaded-With-Dependencies: '&8(&bAPL&8) &fPlugin &a%plugin% &fhas been &cdisabled&f. &7(%plugin%''s dependencies have also been reloaded)'
+    Plugin-Unloaded-Note: '&8(&bAPL&8) &fNote&8: &fYou can type ''&e/apu unload (plugin) -d&f'' to also reload &a%plugin%&f''s dependencies.'
+    Nothing-Was-Changed: '&8(&bAPL&8) &fSorry, but there were no plugins to update/load.'
+    No-Commands-Registered: '&8(&bAPL&8) &fSorry, but the plugin &a%plugin% &fdoesn''t have any commands registered.'
+    Sub-command-Unknown: '&8(&bAPL&8) &fSorry, but &a%argument% &fisn''t a valid sub-command.'
+    Version: '&8(&bAPL&8) &fCurrent version loaded&8: &a%version%'
+    Commands: '&8(&bAPL&8) &a%plugin%&f''s commands: &e%commands%&f.'
+    Commands-Split: '&f, &e'
+    Plugins-Info:
+    - '&b» &fPlugin&8: &a%plugin%'
+    - '&8• &fVersion&8: &a%version%'
+    - '&8• &fAuthor(s)&8: &a%authors%'
+    - '&8• &fStatus&8: %status%'
+    Authors-Split: '&f, &a'
+    Plugin-List:
+    - '&b• &fPlugins &b»'
+    - '&8• &fEnabled&8: &a%enabled%&f.'
+    - '&8• &fDisabled&8: &c%disabled%&f.'
+    Enabled-Split: '&f, &a'
+    Disabled-Split: '&f, &c'
+    Usages:
+        Load: '&8(&bAPL&8) &fUsage&8: &e/plugman load (plugin)'
+        Unload: '&8(&bAPL&8) &fUsage&8: &e/plugman unload (plugin)'
+        Unload-With-Dependencies: '&8(&bAPL&8) &fUsage&8: &e/plugman unload (plugin) [-d]'
+        Reload: '&8(&bAPL&8) &fUsage&8: &e/plugman reload (plugin)'
+        Usage: '&8(&bAPL&8) &fUsage&8: &e/plugman usage (plugin)'
+        Info: '&8(&bAPL&8) &fUsage&8: &e/plugman info (plugin)'
+settings:
+    Your-Plugins-Folder: 'plugins'
+    Automatically-Load-Plugins: true
+    Automatically-Update-Plugins: true
+    Load-Data-Delay: 5 # Seconds - The delay before all the plugins are cached to check for updates. (***MUST*** be smaller than the 'Timer-Delay')
+    Task:
+        Timer-Delay: 10 # Seconds (***MUST*** be larger than the 'Load-Data-Delay')
+        Timer: 1 # Seconds
+    Seconds-Before-Reloading: 5 # Your plugins will only update if they've been loaded for this amount of seconds. (Won't be accurate if the 'Timer' is above 1)
+    Seconds-Before-Loading: 5 # When you upload a plugin, it may need time to fully load into the server. This timer will delay the loading of the plugin. (Won't be accurate if the 'Timer' is above 1)
+    Always-Reload-A-Plugins-Dependencies: true # If you set this to false, you can reload a plugins dependencies when unloading a plugin via '/apu unload (plugin) -d'
+    Send-Players-Alerts: true # Send players with the 'AutoPluginLoader.Alerts' permission alerts when plugins are automatically reloaded/enabled.
+    Plugins-To-Ignore: # AutoPluginLoader won't check these plugins for automatic updates.
+    - 'WorldEdit'
+    - 'WorldGuard'
+    - 'AutoPluginLoader' # Don't remove this. It will cause console errors if you attempt to do it on this plugin.
+    - 'Skript' # Reloading this will cause Skripts extensions to bug out. No support for Skript will be added.
