@@ -67,6 +67,8 @@ public class CommandCreateRails implements CommandExecutor {
 
             prevLocation = railEntry.location.clone();
         }
+
+        entries.forEach(entry -> entry.location.getBlock().setType(currentMaterial));
     }
 
     // If there is no air block in front, we have to go one back and go up by one
@@ -77,14 +79,19 @@ public class CommandCreateRails implements CommandExecutor {
 
         int[] direction = getDirection(vec, xAbs, zAbs);
 
-        Location finalLocation = getNextLocation(startingLocation, direction[0], direction[1]);
-        Material material = finalLocation.clone().getBlock().getType();
+        Location nextLocation = getNextLocation(startingLocation, direction[0], direction[1]);
+        Material material = nextLocation.clone().getBlock().getType();
 
-        boolean canMoveUp = true;
+        RailEntry entry;
+        Material materialInFront = getNextLocation(nextLocation, direction[0], direction[1]).getBlock().getType();
 
-        testBuild(finalLocation);
+        if (!materialInFront.isAir() && materialInFront != currentMaterial) {
+            entry = new RailEntry(nextLocation.add(0, 1, 0), material);
+        } else {
+            entry = new RailEntry(nextLocation, material);
+        }
 
-        return new RailEntry(finalLocation, material, canMoveUp);
+        return entry;
     }
 
     private void testBuild(Location location) {
@@ -128,7 +135,7 @@ public class CommandCreateRails implements CommandExecutor {
     }
 
     private Location getNextLocation(Location location, int x, int z) {
-        return location.add(x, 0, z);
+        return location.clone().add(x, 0, z);
     }
 
     private void notify(Object o, Player p) {

@@ -7,11 +7,11 @@ import org.bukkit.Material;
 public class RailEntry {
     public Material prevMaterial;
     public Location location;
-    public boolean canMoveUp;
+//    public boolean canMoveUp;
 
-    public RailEntry(Location location, Material prevMaterial, boolean canMoveUp) {
+    public RailEntry(Location location, Material prevMaterial) {
         this.location = location;
-        this.canMoveUp = canMoveUp;
+//        this.canMoveUp = canMoveUp;
         this.prevMaterial = prevMaterial;
     }
 
