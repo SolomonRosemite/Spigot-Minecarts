@@ -1,0 +1,8 @@
+name: Minecarts
+version: 1.0
+author: SolomonRosemite
+main: com.rosemite.minecarts.main.Minecarts
+api-version: 1.16
+commands:
+  rails:
+    usage: /<command>

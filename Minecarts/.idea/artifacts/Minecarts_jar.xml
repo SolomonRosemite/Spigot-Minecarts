@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Minecarts:jar">
+    <output-path>$PROJECT_DIR$/../Server/plugins</output-path>
+    <root id="archive" name="Minecarts.jar">
+      <element id="module-output" name="Minecarts" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Dependencies/spigot-api-1.16.5-R0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Dependencies/gson-2.8.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

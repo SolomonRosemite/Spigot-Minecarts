@@ -1,8 +1,0 @@
-name: Minecarts
-version: '${project.version}'
-main: com.rosemite.minecarts.Main
-api-version: 1.17
-authors: [ SolomonRosemite ]
-commands:
-  rails:
-    usage: /rails
