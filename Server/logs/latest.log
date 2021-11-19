@@ -1,373 +1,151 @@
-[22:19:35] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[22:19:35] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[22:19:36] [Worker-Main-5/INFO]: Loaded 7 recipes
-[22:19:37] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[22:19:37] [Server thread/INFO]: Loading properties
-[22:19:37] [Server thread/INFO]: This server is running Paper version git-Paper-629 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[22:19:37] [Server thread/INFO]: Debug logging is disabled
-[22:19:37] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[22:19:37] [Server thread/INFO]: Using 4 threads for Netty based IO
-[22:19:37] [Server thread/INFO]: Default game type: SURVIVAL
-[22:19:37] [Server thread/INFO]: Generating keypair
-[22:19:37] [Server thread/INFO]: Starting Minecraft server on *:25565
-[22:19:37] [Server thread/INFO]: Using default channel type
-[22:19:38] [Server thread/INFO]: [Minecarts] Loading Minecarts v1.0
-[22:19:38] [Server thread/INFO]: [AutoPluginLoader] Loading AutoPluginLoader v1.2.6
-[22:19:38] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[22:19:38] [Server thread/INFO]: Preparing level "world"
-[22:19:38] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[22:19:38] [Server thread/INFO]: Loaded 0 spawn chunks for world world
-[22:19:38] [Server thread/INFO]: Preparing spawn area: 0%
-[22:19:38] [Server thread/INFO]: Preparing spawn area: 1%
-[22:19:38] [Server thread/INFO]: Time elapsed: 660 ms
-[22:19:38] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[22:19:38] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
-[22:19:38] [Server thread/INFO]: Preparing spawn area: 0%
-[22:19:39] [Server thread/INFO]: Time elapsed: 168 ms
-[22:19:39] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[22:19:39] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
-[22:19:39] [Server thread/INFO]: Time elapsed: 98 ms
-[22:19:39] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:19:39] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:19:39] [Server thread/INFO]: [AutoPluginLoader] Enabling AutoPluginLoader v1.2.6
-[22:19:39] [Server thread/INFO]: [AutoPluginLoader] Plugin has successfully loaded. (Took 33ms)
-[22:19:39] [Server thread/INFO]: Running delayed init tasks
-[22:19:39] [Server thread/INFO]: Done (2.118s)! For help, type "help"
-[22:19:39] [Server thread/INFO]: Timings Reset
-[22:21:06] [User Authenticator #1/INFO]: UUID of player JesseFaithful is 1eb861b6-bc3c-49be-ad02-b336095e1daf
-[22:21:06] [Server thread/INFO]: JesseFaithful joined the game
-[22:21:06] [Server thread/INFO]: JesseFaithful[/127.0.0.1:49350] logged in with entity id 99 at ([world]543.0691349594296, 64.0, -669.3685134584341)
-[22:21:17] [Server thread/INFO]: JesseFaithful issued server command: /difficulty
-[22:21:32] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[22:21:32] [Server thread/INFO]: [Log]:Build Rails!
-[22:21:34] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[22:21:34] [Server thread/INFO]: [Log]:Cleared all entries!
-[22:21:40] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[22:21:40] [Server thread/INFO]: [Log]:Build Rails!
-[22:21:41] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[22:21:41] [Server thread/INFO]: [Log]:Cleared all entries!
-[22:35:36] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:35:36] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:35:36] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:35:36] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:35:36] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:35:36] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[22:35:36] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:35:36] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 133ms)
-[22:35:41] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[22:35:41] [Server thread/INFO]: [Log]:Build Rails!
-[22:37:37] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:37:37] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:37:37] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:37:37] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:37:37] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:37:37] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[22:37:37] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:37:37] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 116ms)
-[22:37:46] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[22:37:46] [Server thread/INFO]: [Log]:Build Rails!
-[22:37:58] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[22:37:58] [Server thread/INFO]: [Log]:Cleared all entries!
-[22:38:55] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:38:55] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:38:55] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:38:55] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:38:55] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:38:55] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[22:38:55] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:38:55] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 98ms)
-[22:38:59] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[22:38:59] [Server thread/INFO]: [Log]:Build Rails!
-[22:50:09] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:50:09] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:50:09] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:50:09] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:50:09] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:50:09] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[22:50:09] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:50:09] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 102ms)
-[22:50:22] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[22:50:22] [Server thread/INFO]: [Log]:Build Rails!
-[22:50:41] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[22:50:41] [Server thread/INFO]: [Log]:Cleared all entries!
-[22:51:23] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:51:23] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:51:23] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:51:23] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:51:23] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:51:23] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[22:51:23] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:51:23] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 94ms)
-[22:51:27] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[22:51:27] [Server thread/INFO]: [Log]:Build Rails!
-[22:51:27] [Server thread/INFO]: [Log]:AIR
-[22:51:27] [Server thread/INFO]: [Log]:AIR
-[22:51:27] [Server thread/INFO]: [Log]:DIRT
-[22:51:27] [Server thread/INFO]: [Log]:AIR
-[22:51:27] [Server thread/INFO]: [Log]:GRASS_BLOCK
-[22:51:27] [Server thread/INFO]: [Log]:AIR
-[22:51:27] [Server thread/INFO]: [Log]:GRASS
-[22:51:27] [Server thread/INFO]: [Log]:AIR
-[22:51:27] [Server thread/INFO]: [Log]:AIR
-[22:51:27] [Server thread/INFO]: [Log]:AIR
-[22:52:45] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[22:52:45] [Server thread/INFO]: [Log]:Cleared all entries!
-[22:52:51] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:52:51] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:52:51] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:52:51] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:52:51] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:52:51] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[22:52:51] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:52:51] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 94ms)
-[22:53:10] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[22:53:10] [Server thread/INFO]: [Log]:Build Rails!
-[22:53:10] [Server thread/INFO]: [Log]:AIR
-[22:53:10] [Server thread/INFO]: [Log]:AIR
-[22:53:10] [Server thread/INFO]: [Log]:AIR
-[22:53:10] [Server thread/INFO]: [Log]:GRASS_BLOCK
-[22:53:10] [Server thread/INFO]: [Log]:AIR
-[22:53:10] [Server thread/INFO]: [Log]:AIR
-[22:53:10] [Server thread/INFO]: [Log]:AIR
-[22:53:10] [Server thread/INFO]: [Log]:GRASS_BLOCK
-[22:53:10] [Server thread/INFO]: [Log]:AIR
-[22:53:10] [Server thread/INFO]: [Log]:AIR
-[22:53:23] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[22:53:23] [Server thread/INFO]: [Log]:Cleared all entries!
-[22:53:32] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[22:53:32] [Server thread/INFO]: [Log]:Build Rails!
-[22:53:32] [Server thread/INFO]: [Log]:AIR
-[22:53:32] [Server thread/INFO]: [Log]:AIR
-[22:53:32] [Server thread/INFO]: [Log]:AIR
-[22:53:32] [Server thread/INFO]: [Log]:AIR
-[22:53:32] [Server thread/INFO]: [Log]:GRASS_BLOCK
-[22:53:32] [Server thread/INFO]: [Log]:AIR
-[22:53:32] [Server thread/INFO]: [Log]:AIR
-[22:53:32] [Server thread/INFO]: [Log]:AIR
-[22:53:32] [Server thread/INFO]: [Log]:GRASS_BLOCK
-[22:53:32] [Server thread/INFO]: [Log]:AIR
-[22:53:33] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[22:53:33] [Server thread/INFO]: [Log]:Cleared all entries!
-[22:55:41] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:55:41] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:55:41] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:55:41] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:55:41] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:55:41] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[22:55:41] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:55:41] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 103ms)
-[22:55:46] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[22:55:46] [Server thread/INFO]: [Log]:Build Rails!
-[22:55:49] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[22:55:49] [Server thread/INFO]: [Log]:Cleared all entries!
-[22:57:11] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:57:11] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:57:11] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:57:11] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:57:11] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:57:11] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[22:57:11] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:57:11] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 104ms)
-[22:57:13] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[22:57:13] [Server thread/INFO]: [Log]:Build Rails!
-[22:57:15] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[22:57:15] [Server thread/INFO]: [Log]:Cleared all entries!
-[22:57:33] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[22:57:33] [Server thread/INFO]: [Log]:Build Rails!
-[22:58:31] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[22:58:31] [Server thread/INFO]: [Log]:Cleared all entries!
-[22:58:38] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:58:38] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:58:38] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:58:38] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[22:58:38] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[22:58:38] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[22:58:38] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[22:58:38] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 99ms)
-[22:58:43] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[22:58:43] [Server thread/INFO]: [Log]:Build Rails!
-[22:58:47] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[22:58:47] [Server thread/INFO]: [Log]:Cleared all entries!
-[22:58:53] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[22:58:53] [Server thread/INFO]: [Log]:Build Rails!
-[22:59:00] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[22:59:00] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:01:41] [Server thread/INFO]: JesseFaithful issued server command: /weather ck
-[23:01:44] [Server thread/INFO]: JesseFaithful issued server command: /weather clear
-[23:01:44] [Server thread/INFO]: [JesseFaithful: Set the weather to clear]
-[23:01:50] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[23:01:50] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:01:52] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:01:52] [Server thread/INFO]: [Log]:Build Rails!
-[23:03:04] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[23:03:04] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:03:09] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:03:09] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:03:09] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:03:09] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:03:09] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:03:09] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[23:03:09] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:03:09] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 97ms)
-[23:03:14] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:03:14] [Server thread/INFO]: [Log]:Build Rails!
-[23:03:19] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[23:03:19] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:03:47] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:03:47] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:03:47] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:03:47] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:03:47] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:03:47] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[23:03:47] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:03:47] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 101ms)
-[23:03:59] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:03:59] [Server thread/INFO]: [Log]:Build Rails!
-[23:04:38] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[23:04:38] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:08:57] [Server thread/INFO]: JesseFaithful issued server command: /weather clear
-[23:08:57] [Server thread/INFO]: [JesseFaithful: Set the weather to clear]
-[23:09:08] [Server thread/INFO]: JesseFaithful issued server command: /gamerule doWeatherCycle false
-[23:09:08] [Server thread/INFO]: [JesseFaithful: Gamerule doWeatherCycle is now set to: false]
-[23:10:38] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:10:38] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:10:38] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:10:38] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:10:38] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:10:38] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[23:10:38] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:10:38] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 95ms)
-[23:10:42] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:10:42] [Server thread/INFO]: [Log]:Build Rails!
-[23:11:35] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[23:11:35] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:11:41] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:11:41] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:11:41] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:11:41] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:11:41] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:11:41] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[23:11:41] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:11:41] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 92ms)
-[23:11:45] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:11:45] [Server thread/INFO]: [Log]:Build Rails!
-[23:13:27] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[23:13:27] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:14:20] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:14:20] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:14:20] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:14:20] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:14:20] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:14:20] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[23:14:20] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:14:20] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 100ms)
-[23:14:22] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:14:22] [Server thread/INFO]: [Log]:Build Rails!
-[23:14:22] [Server thread/INFO]: [Log]:AIR
-[23:14:22] [Server thread/INFO]: [Log]:AIR
-[23:14:22] [Server thread/INFO]: [Log]:AIR
-[23:14:22] [Server thread/INFO]: [Log]:AIR
-[23:14:22] [Server thread/INFO]: [Log]:GRASS_BLOCK
-[23:14:22] [Server thread/INFO]: [Log]:AIR
-[23:14:22] [Server thread/INFO]: [Log]:AIR
-[23:14:22] [Server thread/INFO]: [Log]:AIR
-[23:14:22] [Server thread/INFO]: [Log]:GRASS_BLOCK
-[23:14:22] [Server thread/INFO]: [Log]:AIR
-[23:14:52] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:14:52] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:14:52] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:14:52] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:14:52] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:14:52] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[23:14:52] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:14:52] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 98ms)
-[23:14:57] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:14:57] [Server thread/INFO]: [Log]:Build Rails!
-[23:15:11] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[23:15:11] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:15:18] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:15:18] [Server thread/INFO]: [Log]:Build Rails!
-[23:15:23] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[23:15:23] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:15:34] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:15:34] [Server thread/INFO]: [Log]:Build Rails!
-[23:15:41] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[23:15:41] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:15:50] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:15:50] [Server thread/INFO]: [Log]:Build Rails!
-[23:15:57] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[23:15:57] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:16:05] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:16:05] [Server thread/INFO]: [Log]:Build Rails!
-[23:16:16] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[23:16:16] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:16:21] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:16:21] [Server thread/INFO]: [Log]:Build Rails!
-[23:17:19] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:17:19] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:17:19] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:17:19] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:17:19] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:17:19] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[23:17:19] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:17:19] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 95ms)
-[23:17:27] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:17:27] [Server thread/INFO]: [Log]:Build Rails!
-[23:17:36] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[23:17:36] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:17:42] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:17:42] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:17:42] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:17:42] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:17:42] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:17:42] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[23:17:42] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:17:42] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 95ms)
-[23:17:44] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:17:44] [Server thread/INFO]: [Log]:Build Rails!
-[23:17:53] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[23:17:53] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:18:35] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:18:35] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:18:35] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:18:35] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:18:35] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:18:35] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[23:18:35] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:18:35] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 98ms)
-[23:18:39] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:18:39] [Server thread/INFO]: [Log]:Build Rails!
-[23:18:56] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[23:18:56] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:19:03] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:19:03] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:19:03] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:19:03] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:19:03] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[23:19:03] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[23:19:03] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[23:19:03] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 97ms)
-[23:19:05] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[23:19:05] [Server thread/INFO]: [Log]:Build Rails!
-[23:19:14] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[23:19:14] [Server thread/INFO]: [Log]:Cleared all entries!
-[23:19:46] [Server thread/INFO]: Stopping the server
-[23:19:47] [Server thread/INFO]: Stopping server
-[23:19:47] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[23:19:47] [Server thread/INFO]: [AutoPluginLoader] Disabling AutoPluginLoader v1.2.6
-[23:19:47] [Server thread/INFO]: Saving players
-[23:19:47] [Server thread/INFO]: JesseFaithful lost connection: Server closed
-[23:19:47] [Server thread/INFO]: JesseFaithful left the game
-[23:19:47] [Server thread/INFO]: Saving worlds
-[23:19:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[23:19:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[23:19:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[23:19:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[23:19:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[23:19:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[23:19:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[23:19:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[23:19:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[23:19:47] [Server thread/INFO]: Flushing Chunk IO
-[23:19:47] [Server thread/INFO]: Closing Thread Pool
-[23:19:47] [Server thread/INFO]: Closing Server
+[23:20:19] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[23:20:20] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[23:20:20] [Worker-Main-5/INFO]: Loaded 7 recipes
+[23:20:21] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[23:20:21] [Server thread/INFO]: Loading properties
+[23:20:21] [Server thread/INFO]: This server is running Paper version git-Paper-629 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[23:20:21] [Server thread/INFO]: Debug logging is disabled
+[23:20:21] [Server thread/INFO]: Using 4 threads for Netty based IO
+[23:20:21] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[23:20:21] [Server thread/INFO]: Default game type: SURVIVAL
+[23:20:21] [Server thread/INFO]: Generating keypair
+[23:20:21] [Server thread/INFO]: Starting Minecraft server on *:25565
+[23:20:21] [Server thread/INFO]: Using default channel type
+[23:20:22] [Server thread/INFO]: [Minecarts] Loading Minecarts v1.0
+[23:20:22] [Server thread/INFO]: [AutoPluginLoader] Loading AutoPluginLoader v1.2.6
+[23:20:22] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:20:22] [Server thread/INFO]: Preparing level "world"
+[23:20:22] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[23:20:23] [Server thread/INFO]: Loaded 0 spawn chunks for world world
+[23:20:23] [Server thread/INFO]: Preparing spawn area: 0%
+[23:20:23] [Server thread/INFO]: Preparing spawn area: 3%
+[23:20:23] [Server thread/INFO]: Time elapsed: 771 ms
+[23:20:23] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[23:20:23] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
+[23:20:23] [Server thread/INFO]: Preparing spawn area: 0%
+[23:20:23] [Server thread/INFO]: Time elapsed: 146 ms
+[23:20:23] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[23:20:23] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
+[23:20:23] [Server thread/INFO]: Time elapsed: 117 ms
+[23:20:23] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[23:20:23] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[23:20:23] [Server thread/INFO]: [AutoPluginLoader] Enabling AutoPluginLoader v1.2.6
+[23:20:23] [Server thread/INFO]: [AutoPluginLoader] Plugin has successfully loaded. (Took 37ms)
+[23:20:24] [Server thread/INFO]: Running delayed init tasks
+[23:20:24] [Server thread/INFO]: Done (2.354s)! For help, type "help"
+[23:20:24] [Server thread/INFO]: Timings Reset
+[23:20:48] [User Authenticator #1/INFO]: UUID of player JesseFaithful is 1eb861b6-bc3c-49be-ad02-b336095e1daf
+[23:20:48] [Server thread/INFO]: JesseFaithful joined the game
+[23:20:48] [Server thread/INFO]: JesseFaithful[/127.0.0.1:63634] logged in with entity id 100 at ([world]541.3000000119209, 64.0, -669.4898613937437)
+[23:20:58] [Server thread/INFO]: JesseFaithful issued server command: /rails
+[23:21:01] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[23:21:01] [Server thread/INFO]: [Log]:Build Rails!
+[23:21:03] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[23:21:03] [Server thread/INFO]: [Log]:Cleared all entries!
+[23:25:40] [Server thread/INFO]: JesseFaithful has made the advancement [Stone Age]
+[23:27:26] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[23:27:26] [Server thread/INFO]: [Log]:Build Rails!
+[23:28:33] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[23:28:34] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[23:28:34] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[23:28:34] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[23:28:34] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[23:28:34] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[23:28:34] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[23:28:34] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 153ms)
+[23:28:41] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[23:28:41] [Server thread/INFO]: [Log]:Build Rails!
+[23:32:18] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[23:32:18] [Server thread/INFO]: [Log]:Cleared all entries!
+[23:32:31] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[23:32:32] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[23:32:32] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[23:32:32] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[23:32:32] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[23:32:32] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[23:32:32] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[23:32:32] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 148ms)
+[23:32:50] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[23:32:50] [Server thread/INFO]: [Log]:Build Rails!
+[23:33:01] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[23:33:01] [Server thread/INFO]: [Log]:Cleared all entries!
+[23:33:39] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[23:33:40] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[23:33:40] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[23:33:40] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[23:33:40] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[23:33:40] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[23:33:40] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[23:33:40] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 105ms)
+[23:33:44] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[23:33:44] [Server thread/INFO]: [Log]:Build Rails!
+[23:33:48] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[23:33:48] [Server thread/INFO]: [Log]:Cleared all entries!
+[23:34:10] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[23:34:11] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[23:34:11] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[23:34:11] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[23:34:11] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[23:34:11] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[23:34:11] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[23:34:11] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 99ms)
+[23:34:14] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[23:34:14] [Server thread/INFO]: [Log]:Build Rails!
+[23:34:18] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[23:34:18] [Server thread/INFO]: [Log]:Cleared all entries!
+[23:34:52] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[23:34:53] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[23:34:53] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[23:34:53] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[23:34:53] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[23:34:53] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[23:34:53] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[23:34:53] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 96ms)
+[23:34:54] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[23:34:54] [Server thread/INFO]: [Log]:Build Rails!
+[23:35:10] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[23:35:10] [Server thread/INFO]: [Log]:Cleared all entries!
+[23:35:23] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[23:35:23] [Server thread/INFO]: [Log]:Build Rails!
+[23:35:29] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[23:35:29] [Server thread/INFO]: [Log]:Cleared all entries!
+[23:35:38] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[23:35:38] [Server thread/INFO]: [Log]:Build Rails!
+[23:38:29] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[23:38:29] [Server thread/INFO]: [Log]:Cleared all entries!
+[23:38:41] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[23:38:42] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[23:38:42] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[23:38:42] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[23:38:42] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[23:38:42] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[23:38:42] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[23:38:42] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 101ms)
+[23:38:44] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[23:38:44] [Server thread/INFO]: [Log]:Build Rails!
+[23:39:05] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[23:39:05] [Server thread/INFO]: [Log]:Cleared all entries!
+[23:39:18] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[23:39:18] [Server thread/INFO]: [Log]:Build Rails!
+[23:39:23] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[23:39:23] [Server thread/INFO]: [Log]:Cleared all entries!
+[23:44:29] [Server thread/INFO]: Stopping the server
+[23:44:29] [Server thread/INFO]: Stopping server
+[23:44:29] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[23:44:29] [Server thread/INFO]: [AutoPluginLoader] Disabling AutoPluginLoader v1.2.6
+[23:44:29] [Server thread/INFO]: Saving players
+[23:44:29] [Server thread/INFO]: JesseFaithful lost connection: Server closed
+[23:44:29] [Server thread/INFO]: JesseFaithful left the game
+[23:44:29] [Server thread/INFO]: Saving worlds
+[23:44:29] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[23:44:29] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[23:44:29] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[23:44:29] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23:44:29] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[23:44:29] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23:44:29] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[23:44:29] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23:44:29] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23:44:29] [Server thread/INFO]: Flushing Chunk IO
+[23:44:29] [Server thread/INFO]: Closing Thread Pool
+[23:44:29] [Server thread/INFO]: Closing Server

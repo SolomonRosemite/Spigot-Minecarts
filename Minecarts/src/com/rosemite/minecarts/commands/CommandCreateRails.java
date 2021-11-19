@@ -16,7 +16,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class CommandCreateRails implements CommandExecutor {
     private final LinkedList<RailEntry> entries;
-    private final Material currentMaterial = Material.POLISHED_BASALT;
+    private final Material currentMaterial = Material.REDSTONE;
+//    private final Material currentMaterial = Material.POLISHED_BASALT;
 
     public CommandCreateRails() {
         entries = new LinkedList<>();
@@ -43,7 +44,7 @@ public class CommandCreateRails implements CommandExecutor {
 
             if (req.startsWith("b")) {
                 notify("Build Rails!", p);
-                buildRails(p, 10);
+                buildRails(p, 30);
                 return true;
             }
 
@@ -68,7 +69,7 @@ public class CommandCreateRails implements CommandExecutor {
             prevLocation = railEntry.location.clone();
         }
 
-        entries.forEach(entry -> entry.location.getBlock().setType(currentMaterial));
+        buildRoute();
     }
 
     // If there is no air block in front, we have to go one back and go up by one
@@ -79,44 +80,40 @@ public class CommandCreateRails implements CommandExecutor {
 
         int[] direction = getDirection(vec, xAbs, zAbs);
 
-        Location nextLocation = getNextLocation(startingLocation, direction[0], direction[1]);
-        Material material = nextLocation.clone().getBlock().getType();
-
         RailEntry entry;
+
+        Location nextLocation = getNextLocation(startingLocation, direction[0], direction[1]);
+        Material materialInFrontFirst = nextLocation.getBlock().getType();
         Material materialInFront = getNextLocation(nextLocation, direction[0], direction[1]).getBlock().getType();
 
-        if (!materialInFront.isAir() && materialInFront != currentMaterial) {
-            entry = new RailEntry(nextLocation.add(0, 1, 0), material);
+        if ((!materialInFront.isAir() || !materialInFrontFirst.isAir()) && materialInFront != currentMaterial) {
+            entry = new RailEntry(nextLocation.add(0, 1, 0), nextLocation.getBlock().getType());
         } else {
-            entry = new RailEntry(nextLocation, material);
+            // Check if we can go one down
+            Location l = nextLocation.clone().add(0, -1, 0);
+            if (l.getBlock().isEmpty() && l.add(0, -1, 0).getBlock().isEmpty() && getNextLocation(l, direction[0] * -1, direction[1] * -1).getBlock().isEmpty()) {
+                entry = new RailEntry(nextLocation.add(0, -1, 0), nextLocation.getBlock().getType());
+            } else {
+                entry = new RailEntry(nextLocation, nextLocation.clone().getBlock().getType());
+            }
         }
 
         return entry;
     }
 
-    private void testBuild(Location location) {
-        location.getBlock().setType(currentMaterial);
-    }
-
     private void clearPlacedBlocks(Location l) {
         //noinspection ConstantConditions
         entries.forEach(entry -> l.getWorld().getBlockAt(entry.location.getBlockX(), entry.location.getBlockY(), entry.location.getBlockZ()).setType(entry.prevMaterial));
+        //noinspection ConstantConditions
+        entries.forEach(entry -> l.getWorld().getBlockAt(entry.location.getBlockX(), entry.location.getBlockY() + 1, entry.location.getBlockZ()).setType(Material.AIR));
     }
 
-//    private Location buildRail(Location l) {
-//        Vector vec = l.getDirection();
-//        double xAbs = Math.abs(vec.getX());
-//        double zAbs = Math.abs(vec.getZ());
-//
-//        int[] direction = getDirection(vec, xAbs, zAbs);
-//
-//        Location newLocation = getNextLocation(l, direction[0], direction[1]);
-//
-//        // Building rail
-//        newLocation.clone().add(0, -1, 0).getBlock().setType(Material.REDSTONE_BLOCK);
-//        newLocation.getBlock().setType(Material.POWERED_RAIL);
-//        return newLocation;
-//    }
+    private void buildRoute() {
+        entries.forEach(entry -> {
+            entry.location.getBlock().setType(currentMaterial);
+            entry.location.clone().add(0, 1, 0).getBlock().setType(Material.POWERED_RAIL);
+        });
+    }
 
     private int[] getDirection(Vector vec, double xAbs, double zAbs) {
         if (xAbs > zAbs) {
