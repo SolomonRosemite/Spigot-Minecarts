@@ -19,10 +19,17 @@ public class CommandCreateRails implements CommandExecutor {
     private final LinkedList<RailEntry> entries;
     private final Material currentMaterial = Material.POLISHED_BASALT;
     private final boolean fullTest = true;
-    private final int distance = 999;
+    @SuppressWarnings("FieldCanBeLocal")
+    private final int distance = 201 * 4;
+//    private final int distance = 201 * 2;
+//    private final int distance = 201;
+//    private final int distance = 120 - 3;
+//    private final int distance = 60;
+    private final Location loc;
 
-    public CommandCreateRails() {
+    public CommandCreateRails(Location location) {
         entries = new LinkedList<>();
+        loc = location;
     }
 
     @Override
@@ -32,7 +39,6 @@ public class CommandCreateRails implements CommandExecutor {
         }
 
         Player p = (Player) sender;
-        Location l = Convert.fromJson("{ \"world\": \"world\", \"x\": 541.3000000119209, \"y\": 64.0, \"z\": -669.3424957397692, \"yaw\": 272.16498, \"pitch\": 2.430829 }", Location.class);
 
         if (args.length > 0)
         {
@@ -47,7 +53,7 @@ public class CommandCreateRails implements CommandExecutor {
 
             if (req.startsWith("b")) {
                 notify("Build Rails!", p);
-                buildRails(l, distance);
+                buildRails(loc, distance);
                 return true;
             }
 
@@ -63,21 +69,24 @@ public class CommandCreateRails implements CommandExecutor {
     }
 
     private void buildRails(Location location, int distance) {
-        Location prevLocation = location.clone();
-        Log.d(prevLocation.getBlockX());
-        Log.d(prevLocation.getX());
-//        Location l2 = prevLocation;
-        Location l2 = new Location(prevLocation.getWorld(), prevLocation.getBlockX(), prevLocation.getBlockY(), prevLocation.getBlockZ(), prevLocation.getYaw(), prevLocation.getPitch());
+        Location l = location.clone();
+        Location prevLocation = new Location(l.getWorld(), l.getBlockX(), l.getBlockY(), l.getBlockZ(), l.getYaw(), l.getPitch());
+
+        Vector vec = l.getDirection();
+        double xAbs = Math.abs(vec.getX());
+        double zAbs = Math.abs(vec.getZ());
+
+        int[] direction = getDirection(vec, xAbs, zAbs);
 
         for (int i = 0; i < distance; i++) {
             RailEntry prevEntry = i != 0 ? entries.getLast() : null;
-            RailEntry railEntry = calculateRailPath(l2, prevEntry);
+            RailEntry railEntry = calculateRailPath(prevLocation, direction, prevEntry);
             entries.add(railEntry);
 
-            l2 = railEntry.location.clone();
+            prevLocation = railEntry.location.clone();
         }
 
-        verifyAndFix();
+        verifyAndFix(direction);
 
         if (fullTest)
             buildRoute();
@@ -85,13 +94,7 @@ public class CommandCreateRails implements CommandExecutor {
             testBuild();
     }
 
-    private RailEntry calculateRailPath(Location startingLocation, RailEntry prevEntry) {
-        Vector vec = startingLocation.getDirection();
-        double xAbs = Math.abs(vec.getX());
-        double zAbs = Math.abs(vec.getZ());
-
-        int[] direction = getDirection(vec, xAbs, zAbs);
-
+    private RailEntry calculateRailPath(Location startingLocation, int[] direction, RailEntry prevEntry) {
         Location nextLocation = Common.getNextLocation(startingLocation, direction[0], direction[1]);
 
         if (nextLocation.getBlock().isEmpty()) {
@@ -99,9 +102,8 @@ public class CommandCreateRails implements CommandExecutor {
             Location l = nextLocation.clone().add(0, -1, 0);
 
 //            if (l.getBlock().isEmpty() && l.add(0, -1, 0).getBlock().isEmpty() && Common.getNextLocation(l, direction[0] * -1, direction[1] * -1).getBlock().isEmpty()) {
-
             if (l.getBlock().isEmpty() && l.add(0, -1, 0).getBlock().isEmpty()) {
-//                return new RailEntry(nextLocation.add(0, -1, 0), nextLocation.getBlock().getType(), prevEntry);
+                return new RailEntry(nextLocation.add(0, -1, 0), nextLocation.getBlock().getType(), prevEntry);
             }
 
             return new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
@@ -122,7 +124,49 @@ public class CommandCreateRails implements CommandExecutor {
         return new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
     }
 
-    private void verifyAndFix() {
+    private void verifyAndFix(int[] direction) {
+        // Repeat until height verification succeeds
+        while (true) {
+            if (verifyHeight(direction)) {
+                break;
+            }
+        }
+
+//        Log.d("----------------------");
+//        Log.d(verifyHeight(direction));
+//        Log.d("----------------------");
+//        Log.d("----------------------");
+//        Log.d(verifyHeight(direction));
+//        Log.d("----------------------");
+//        Log.d("----------------------");
+//        Log.d(verifyHeight(direction));
+//        Log.d("----------------------");
+//        Log.d("----------------------");
+//        Log.d(verifyHeight(direction));
+//        Log.d("----------------------");
+
+        verifyAndFixInvalidTrackPattern();
+    }
+
+    private boolean verifyHeight(int[] direction) {
+        Location prevLocation = entries.getFirst().location.clone();
+
+        for (RailEntry entry : entries) {
+            int heightDifference = Math.abs(entry.location.getBlockY() - prevLocation.getBlockY());
+
+            if (heightDifference > 1) {
+                prevLocation = entry.location.clone();
+                entry.moveUpChildByOne();
+                return false;
+            }
+
+            prevLocation = entry.location.clone();
+        }
+
+        return true;
+    }
+
+    private void verifyAndFixInvalidTrackPattern() {
         LinkedHashMap<Integer, RailEntry> queue = new LinkedHashMap<>() {
             @Override
             protected boolean removeEldestEntry(Map.Entry<Integer, RailEntry> eldest) {
@@ -152,7 +196,7 @@ public class CommandCreateRails implements CommandExecutor {
         }
     }
 
-    private void clearPlacedBlocks(Location l) {
+    public void clearPlacedBlocks(Location l) {
         if (fullTest)
         {
             //noinspection ConstantConditions
