@@ -1,5 +1,6 @@
 package com.rosemite.minecarts.commands;
 
+import com.rosemite.minecarts.helpers.Common;
 import com.rosemite.minecarts.helpers.Convert;
 import com.rosemite.minecarts.helpers.Log;
 import com.rosemite.minecarts.models.RailEntry;
@@ -16,8 +17,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class CommandCreateRails implements CommandExecutor {
     private final LinkedList<RailEntry> entries;
-    private final Material currentMaterial = Material.REDSTONE;
-//    private final Material currentMaterial = Material.POLISHED_BASALT;
+//    private final Material currentMaterial = Material.REDSTONE_BLOCK;
+    private final Material currentMaterial = Material.POLISHED_BASALT;
 
     public CommandCreateRails() {
         entries = new LinkedList<>();
@@ -44,7 +45,7 @@ public class CommandCreateRails implements CommandExecutor {
 
             if (req.startsWith("b")) {
                 notify("Build Rails!", p);
-                buildRails(p, 30);
+                buildRails(p, 20);
                 return true;
             }
 
@@ -60,20 +61,21 @@ public class CommandCreateRails implements CommandExecutor {
     }
 
     private void buildRails(Player player, int distance) {
-        Location prevLocation = player.getLocation().add(0, 0, 0);
+        Location prevLocation = player.getLocation();
 
         for (int i = 0; i < distance; i++) {
-            RailEntry railEntry = calculateRailPath(prevLocation);
+            RailEntry prevEntry = i != 0 ? entries.getLast() : null;
+            RailEntry railEntry = calculateRailPath(prevLocation, prevEntry);
             entries.add(railEntry);
 
             prevLocation = railEntry.location.clone();
         }
 
-        buildRoute();
+        testBuild();
+//        buildRoute();
     }
 
-    // If there is no air block in front, we have to go one back and go up by one
-    private RailEntry calculateRailPath(Location startingLocation) {
+    private RailEntry calculateRailPath(Location startingLocation, RailEntry prevEntry) {
         Vector vec = startingLocation.getDirection();
         double xAbs = Math.abs(vec.getX());
         double zAbs = Math.abs(vec.getZ());
@@ -82,19 +84,26 @@ public class CommandCreateRails implements CommandExecutor {
 
         RailEntry entry;
 
-        Location nextLocation = getNextLocation(startingLocation, direction[0], direction[1]);
+        Location nextLocation = Common.getNextLocation(startingLocation, direction[0], direction[1]);
         Material materialInFrontFirst = nextLocation.getBlock().getType();
-        Material materialInFront = getNextLocation(nextLocation, direction[0], direction[1]).getBlock().getType();
+        Material materialInFront = Common.getNextLocation(nextLocation, direction[0], direction[1]).getBlock().getType();
 
         if ((!materialInFront.isAir() || !materialInFrontFirst.isAir()) && materialInFront != currentMaterial) {
-            entry = new RailEntry(nextLocation.add(0, 1, 0), nextLocation.getBlock().getType());
+            nextLocation.add(0, 1, 0);
+            if (nextLocation.getBlock().isEmpty())
+                entry = new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
+            else
+            {
+                entry = new RailEntry(nextLocation.add(0, 1, 0), nextLocation.getBlock().getType(), prevEntry);
+                entry.moveOneUp(direction);
+            }
         } else {
             // Check if we can go one down
             Location l = nextLocation.clone().add(0, -1, 0);
-            if (l.getBlock().isEmpty() && l.add(0, -1, 0).getBlock().isEmpty() && getNextLocation(l, direction[0] * -1, direction[1] * -1).getBlock().isEmpty()) {
-                entry = new RailEntry(nextLocation.add(0, -1, 0), nextLocation.getBlock().getType());
+            if (l.getBlock().isEmpty() && l.add(0, -1, 0).getBlock().isEmpty() && Common.getNextLocation(l, direction[0] * -1, direction[1] * -1).getBlock().isEmpty()) {
+                entry = new RailEntry(nextLocation.add(0, -1, 0), nextLocation.getBlock().getType(), prevEntry);
             } else {
-                entry = new RailEntry(nextLocation, nextLocation.clone().getBlock().getType());
+                entry = new RailEntry(nextLocation, nextLocation.clone().getBlock().getType(), prevEntry);
             }
         }
 
@@ -110,8 +119,14 @@ public class CommandCreateRails implements CommandExecutor {
 
     private void buildRoute() {
         entries.forEach(entry -> {
-            entry.location.getBlock().setType(currentMaterial);
+            entry.location.getBlock().setType(Material.REDSTONE_BLOCK);
             entry.location.clone().add(0, 1, 0).getBlock().setType(Material.POWERED_RAIL);
+        });
+    }
+
+    private void testBuild() {
+        entries.forEach(entry -> {
+            entry.location.getBlock().setType(currentMaterial);
         });
     }
 
@@ -129,10 +144,6 @@ public class CommandCreateRails implements CommandExecutor {
                 return new int[] { 0, -1 };
             }
         }
-    }
-
-    private Location getNextLocation(Location location, int x, int z) {
-        return location.clone().add(x, 0, z);
     }
 
     private void notify(Object o, Player p) {
