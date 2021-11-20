@@ -157,7 +157,7 @@ world-settings:
       sprint-multiplier: 0.1
       other-multiplier: 0.0
     max-tick-time:
-      tile: 50
-      entity: 50
+      tile: 2000000000
+      entity: 2000000000
     squid-spawn-range:
       min: 45.0

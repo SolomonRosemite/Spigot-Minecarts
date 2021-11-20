@@ -1,62 +1,54 @@
-[17:48:23] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[17:48:23] [main/INFO]: Found new data pack file/bukkit, loading it automatically
-[17:48:23] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[17:48:23] [Worker-Main-5/INFO]: Loaded 7 recipes
-[17:48:24] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[17:48:24] [Server thread/INFO]: Loading properties
-[17:48:24] [Server thread/INFO]: This server is running Paper version git-Paper-629 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[17:48:24] [Server thread/INFO]: Debug logging is disabled
-[17:48:24] [Server thread/INFO]: Using 4 threads for Netty based IO
-[17:48:24] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[17:48:24] [Server thread/INFO]: Default game type: SURVIVAL
-[17:48:24] [Server thread/INFO]: Generating keypair
-[17:48:25] [Server thread/INFO]: Starting Minecraft server on *:25565
-[17:48:25] [Server thread/INFO]: Using default channel type
-[17:48:25] [Server thread/INFO]: [Minecarts] Loading Minecarts v1.0
-[17:48:25] [Server thread/INFO]: [AutoPluginLoader] Loading AutoPluginLoader v1.2.6
-[17:48:25] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[17:48:25] [Server thread/INFO]: Preparing level "world"
-[17:48:26] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[17:48:26] [Server thread/INFO]: Preparing spawn area: 0%
-[17:48:26] [Server thread/INFO]: Loaded 0 spawn chunks for world world
-[17:48:26] [Server thread/INFO]: Preparing spawn area: 5%
-[17:48:26] [Server thread/INFO]: Time elapsed: 690 ms
-[17:48:26] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[17:48:27] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
-[17:48:27] [Server thread/INFO]: Preparing spawn area: 0%
-[17:48:27] [Server thread/INFO]: Time elapsed: 159 ms
-[17:48:27] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[17:48:27] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
-[17:48:27] [Server thread/INFO]: Time elapsed: 116 ms
-[17:48:27] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[17:48:27] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[17:48:27] [Server thread/INFO]: [AutoPluginLoader] Enabling AutoPluginLoader v1.2.6
-[17:48:27] [Server thread/INFO]: [AutoPluginLoader] Plugin has successfully loaded. (Took 28ms)
-[17:48:27] [Server thread/INFO]: Running delayed init tasks
-[17:48:27] [Server thread/INFO]: Done (2.561s)! For help, type "help"
-[17:48:27] [Server thread/INFO]: Timings Reset
-[17:48:30] [User Authenticator #1/INFO]: UUID of player JesseFaithful is 1eb861b6-bc3c-49be-ad02-b336095e1daf
-[17:48:30] [Server thread/INFO]: JesseFaithful joined the game
-[17:48:30] [Server thread/INFO]: JesseFaithful[/127.0.0.1:64220] logged in with entity id 351 at ([world]242.5, 78.0, 55.5)
-[17:48:40] [Server thread/INFO]: JesseFaithful issued server command: /gamemode creative
-[17:48:40] [Server thread/INFO]: [JesseFaithful: Set own game mode to Creative Mode]
-[17:49:24] [Server thread/INFO]: Stopping the server
-[17:49:24] [Server thread/INFO]: Stopping server
-[17:49:24] [Server thread/INFO]: [AutoPluginLoader] Disabling AutoPluginLoader v1.2.6
-[17:49:24] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[17:49:24] [Server thread/INFO]: Saving players
-[17:49:24] [Server thread/INFO]: JesseFaithful lost connection: Server closed
-[17:49:24] [Server thread/INFO]: JesseFaithful left the game
-[17:49:24] [Server thread/INFO]: Saving worlds
-[17:49:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[17:49:25] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[17:49:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[17:49:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[17:49:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[17:49:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[17:49:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[17:49:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[17:49:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[17:49:26] [Server thread/INFO]: Flushing Chunk IO
-[17:49:26] [Server thread/INFO]: Closing Thread Pool
-[17:49:26] [Server thread/INFO]: Closing Server
+[17:58:20] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[17:58:20] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[17:58:21] [Worker-Main-5/INFO]: Loaded 7 recipes
+[17:58:21] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[17:58:21] [Server thread/INFO]: Loading properties
+[17:58:22] [Server thread/INFO]: This server is running Paper version git-Paper-629 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[17:58:22] [Server thread/INFO]: Debug logging is disabled
+[17:58:22] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:58:22] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:58:22] [Server thread/INFO]: Default game type: SURVIVAL
+[17:58:22] [Server thread/INFO]: Generating keypair
+[17:58:22] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:58:22] [Server thread/INFO]: Using default channel type
+[17:58:22] [Server thread/INFO]: [Minecarts] Loading Minecarts v1.0
+[17:58:22] [Server thread/INFO]: [AutoPluginLoader] Loading AutoPluginLoader v1.2.6
+[17:58:22] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:58:22] [Server thread/INFO]: Preparing level "world"
+[17:58:23] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[17:58:23] [Server thread/INFO]: Loaded 0 spawn chunks for world world
+[17:58:23] [Server thread/INFO]: Preparing spawn area: 0%
+[17:58:23] [Server thread/INFO]: Preparing spawn area: 0%
+[17:58:23] [Server thread/INFO]: Time elapsed: 833 ms
+[17:58:23] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[17:58:24] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
+[17:58:24] [Server thread/INFO]: Preparing spawn area: 0%
+[17:58:24] [Server thread/INFO]: Time elapsed: 175 ms
+[17:58:24] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[17:58:24] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
+[17:58:24] [Server thread/INFO]: Time elapsed: 239 ms
+[17:58:24] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[17:58:24] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[17:58:24] [Server thread/INFO]: [AutoPluginLoader] Enabling AutoPluginLoader v1.2.6
+[17:58:24] [Server thread/INFO]: [AutoPluginLoader] Plugin has successfully loaded. (Took 33ms)
+[17:58:24] [Server thread/INFO]: Running delayed init tasks
+[17:58:24] [Server thread/INFO]: Done (2.490s)! For help, type "help"
+[17:58:24] [Server thread/INFO]: Timings Reset
+[17:58:33] [Server thread/INFO]: Stopping the server
+[17:58:33] [Server thread/INFO]: Stopping server
+[17:58:33] [Server thread/INFO]: [AutoPluginLoader] Disabling AutoPluginLoader v1.2.6
+[17:58:33] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[17:58:33] [Server thread/INFO]: Saving players
+[17:58:33] [Server thread/INFO]: Saving worlds
+[17:58:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[17:58:34] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:58:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[17:58:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:58:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[17:58:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:58:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:58:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:58:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:58:35] [Server thread/INFO]: Flushing Chunk IO
+[17:58:35] [Server thread/INFO]: Closing Thread Pool
+[17:58:35] [Server thread/INFO]: Closing Server
