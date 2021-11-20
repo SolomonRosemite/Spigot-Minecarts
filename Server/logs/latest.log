@@ -1,54 +1,528 @@
-[17:58:20] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[17:58:20] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[17:58:21] [Worker-Main-5/INFO]: Loaded 7 recipes
-[17:58:21] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[17:58:21] [Server thread/INFO]: Loading properties
-[17:58:22] [Server thread/INFO]: This server is running Paper version git-Paper-629 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[17:58:22] [Server thread/INFO]: Debug logging is disabled
-[17:58:22] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[17:58:22] [Server thread/INFO]: Using 4 threads for Netty based IO
-[17:58:22] [Server thread/INFO]: Default game type: SURVIVAL
-[17:58:22] [Server thread/INFO]: Generating keypair
-[17:58:22] [Server thread/INFO]: Starting Minecraft server on *:25565
-[17:58:22] [Server thread/INFO]: Using default channel type
-[17:58:22] [Server thread/INFO]: [Minecarts] Loading Minecarts v1.0
-[17:58:22] [Server thread/INFO]: [AutoPluginLoader] Loading AutoPluginLoader v1.2.6
-[17:58:22] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[17:58:22] [Server thread/INFO]: Preparing level "world"
-[17:58:23] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[17:58:23] [Server thread/INFO]: Loaded 0 spawn chunks for world world
-[17:58:23] [Server thread/INFO]: Preparing spawn area: 0%
-[17:58:23] [Server thread/INFO]: Preparing spawn area: 0%
-[17:58:23] [Server thread/INFO]: Time elapsed: 833 ms
-[17:58:23] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[17:58:24] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
-[17:58:24] [Server thread/INFO]: Preparing spawn area: 0%
-[17:58:24] [Server thread/INFO]: Time elapsed: 175 ms
-[17:58:24] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[17:58:24] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
-[17:58:24] [Server thread/INFO]: Time elapsed: 239 ms
-[17:58:24] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[17:58:24] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[17:58:24] [Server thread/INFO]: [AutoPluginLoader] Enabling AutoPluginLoader v1.2.6
-[17:58:24] [Server thread/INFO]: [AutoPluginLoader] Plugin has successfully loaded. (Took 33ms)
-[17:58:24] [Server thread/INFO]: Running delayed init tasks
-[17:58:24] [Server thread/INFO]: Done (2.490s)! For help, type "help"
-[17:58:24] [Server thread/INFO]: Timings Reset
-[17:58:33] [Server thread/INFO]: Stopping the server
-[17:58:33] [Server thread/INFO]: Stopping server
-[17:58:33] [Server thread/INFO]: [AutoPluginLoader] Disabling AutoPluginLoader v1.2.6
-[17:58:33] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[17:58:33] [Server thread/INFO]: Saving players
-[17:58:33] [Server thread/INFO]: Saving worlds
-[17:58:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[17:58:34] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[17:58:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[17:58:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[17:58:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[17:58:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[17:58:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[17:58:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[17:58:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[17:58:35] [Server thread/INFO]: Flushing Chunk IO
-[17:58:35] [Server thread/INFO]: Closing Thread Pool
-[17:58:35] [Server thread/INFO]: Closing Server
+[17:59:08] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[17:59:09] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[17:59:09] [Worker-Main-5/INFO]: Loaded 7 recipes
+[17:59:10] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[17:59:10] [Server thread/INFO]: Loading properties
+[17:59:10] [Server thread/INFO]: This server is running Paper version git-Paper-629 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[17:59:10] [Server thread/INFO]: Debug logging is disabled
+[17:59:10] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:59:10] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:59:10] [Server thread/INFO]: Default game type: SURVIVAL
+[17:59:10] [Server thread/INFO]: Generating keypair
+[17:59:10] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:59:10] [Server thread/INFO]: Using default channel type
+[17:59:11] [Server thread/INFO]: [Minecarts] Loading Minecarts v1.0
+[17:59:11] [Server thread/INFO]: [AutoPluginLoader] Loading AutoPluginLoader v1.2.6
+[17:59:11] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:59:11] [Server thread/INFO]: Preparing level "world"
+[17:59:11] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[17:59:12] [Server thread/INFO]: Loaded 0 spawn chunks for world world
+[17:59:12] [Server thread/INFO]: Preparing spawn area: 0%
+[17:59:12] [Server thread/INFO]: Preparing spawn area: 0%
+[17:59:12] [Server thread/INFO]: Time elapsed: 835 ms
+[17:59:12] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[17:59:12] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
+[17:59:12] [Server thread/INFO]: Preparing spawn area: 0%
+[17:59:12] [Server thread/INFO]: Time elapsed: 148 ms
+[17:59:12] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[17:59:12] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
+[17:59:13] [Server thread/INFO]: Time elapsed: 137 ms
+[17:59:13] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[17:59:13] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[17:59:13] [Server thread/INFO]: [AutoPluginLoader] Enabling AutoPluginLoader v1.2.6
+[17:59:13] [Server thread/INFO]: [AutoPluginLoader] Plugin has successfully loaded. (Took 21ms)
+[17:59:13] [Server thread/INFO]: Running delayed init tasks
+[17:59:13] [Server thread/INFO]: Done (2.371s)! For help, type "help"
+[17:59:13] [Server thread/INFO]: Timings Reset
+[17:59:18] [User Authenticator #1/INFO]: UUID of player JesseFaithful is 1eb861b6-bc3c-49be-ad02-b336095e1daf
+[17:59:18] [Server thread/INFO]: JesseFaithful joined the game
+[17:59:18] [Server thread/INFO]: JesseFaithful[/127.0.0.1:64437] logged in with entity id 342 at ([world]183.3656615102327, 140.0, -12.486639208385782)
+[17:59:34] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[17:59:34] [Server thread/INFO]: [Log]:Build Rails!
+[17:59:44] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - git-Paper-629 (MC: 1.16.5) ---
+[17:59:44] [Paper Watchdog Thread/ERROR]: The server has not responded for 10 seconds! Creating thread dump
+[17:59:44] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:59:44] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[17:59:44] [Paper Watchdog Thread/ERROR]: Chunk wait task info below: 
+[17:59:44] [Paper Watchdog Thread/ERROR]: -173,-1 in 'world:
+[17:59:44] [Paper Watchdog Thread/ERROR]: Load Task - none
+[17:59:44] [Paper Watchdog Thread/ERROR]: Save Task - none
+[17:59:44] [Paper Watchdog Thread/ERROR]: Chunk Holder - non-null
+[17:59:44] [Paper Watchdog Thread/ERROR]: Chunk Status - minecraft:light
+[17:59:44] [Paper Watchdog Thread/ERROR]: Chunk Ticket Status - minecraft:full
+[17:59:44] [Paper Watchdog Thread/ERROR]: Chunk Holder Status - minecraft:features
+[17:59:44] [Paper Watchdog Thread/ERROR]: Chunk Holder Priority - 2
+[17:59:44] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:59:44] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[17:59:44] [Paper Watchdog Thread/ERROR]: 	PID: 38 | Suspended: false | Native: false | State: TIMED_WAITING
+[17:59:44] [Paper Watchdog Thread/ERROR]: 	Stack:
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.bm(IAsyncTaskHandler.java:131)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:120)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.ChunkProviderServer.getChunkAt(ChunkProviderServer.java:536)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.World.getType(World.java:736)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.getNMS(CraftBlock.java:79)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.isEmpty(CraftBlock.java:616)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.calculateRailPath(CommandCreateRails.java:98)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.buildRails(CommandCreateRails.java:81)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.onCommand(CommandCreateRails.java:54)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.PluginCommand.execute(PluginCommand.java:45)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:810)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.handleCommand(PlayerConnection.java:2171)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.c(PlayerConnection.java:1986)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:1939)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:50)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:8)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$ensureMainThread$1(PlayerConnectionUtils.java:35)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils$$Lambda$4301/0x0000000800e7ec40.run(Unknown Source)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(IAsyncTaskHandler.java:136)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(IAsyncTaskHandler.java:109)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:1262)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:1255)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:119)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:1216)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1130)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:289)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer$$Lambda$3163/0x00000008008fc440.run(Unknown Source)
+[17:59:44] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.Thread.run(Thread.java:834)
+[17:59:44] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:59:44] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[17:59:44] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:59:49] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - git-Paper-629 (MC: 1.16.5) ---
+[17:59:49] [Paper Watchdog Thread/ERROR]: The server has not responded for 15 seconds! Creating thread dump
+[17:59:49] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:59:49] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[17:59:49] [Paper Watchdog Thread/ERROR]: Chunk wait task info below: 
+[17:59:49] [Paper Watchdog Thread/ERROR]: -237,-1 in 'world:
+[17:59:49] [Paper Watchdog Thread/ERROR]: Load Task - none
+[17:59:49] [Paper Watchdog Thread/ERROR]: Save Task - none
+[17:59:49] [Paper Watchdog Thread/ERROR]: Chunk Holder - non-null
+[17:59:49] [Paper Watchdog Thread/ERROR]: Chunk Status - minecraft:features
+[17:59:49] [Paper Watchdog Thread/ERROR]: Chunk Ticket Status - minecraft:full
+[17:59:49] [Paper Watchdog Thread/ERROR]: Chunk Holder Status - minecraft:features
+[17:59:49] [Paper Watchdog Thread/ERROR]: Chunk Holder Priority - 2
+[17:59:49] [Paper Watchdog Thread/ERROR]: Chunk Neighbors: 
+[17:59:49] [Paper Watchdog Thread/ERROR]:   -238,-1 in world:
+[17:59:49] [Paper Watchdog Thread/ERROR]:   Chunk Holder - non-null
+[17:59:49] [Paper Watchdog Thread/ERROR]:   Chunk Status - minecraft:liquid_carvers
+[17:59:49] [Paper Watchdog Thread/ERROR]:   Chunk Ticket Status - minecraft:features
+[17:59:49] [Paper Watchdog Thread/ERROR]:   Chunk Holder Status - minecraft:liquid_carvers
+[17:59:49] [Paper Watchdog Thread/ERROR]:   Chunk Holder Priority - 3
+[17:59:49] [Paper Watchdog Thread/ERROR]:   Chunk Neighbors: 
+[17:59:49] [Paper Watchdog Thread/ERROR]:     -239,0 in world:
+[17:59:49] [Paper Watchdog Thread/ERROR]:     Chunk Holder - non-null
+[17:59:49] [Paper Watchdog Thread/ERROR]:     Chunk Status - minecraft:noise
+[17:59:49] [Paper Watchdog Thread/ERROR]:     Chunk Ticket Status - minecraft:liquid_carvers
+[17:59:49] [Paper Watchdog Thread/ERROR]:     Chunk Holder Status - minecraft:noise
+[17:59:49] [Paper Watchdog Thread/ERROR]:     Chunk Holder Priority - 4
+[17:59:49] [Paper Watchdog Thread/ERROR]:   -238,0 in world:
+[17:59:49] [Paper Watchdog Thread/ERROR]:   Chunk Holder - non-null
+[17:59:49] [Paper Watchdog Thread/ERROR]:   Chunk Status - minecraft:liquid_carvers
+[17:59:49] [Paper Watchdog Thread/ERROR]:   Chunk Ticket Status - minecraft:features
+[17:59:49] [Paper Watchdog Thread/ERROR]:   Chunk Holder Status - minecraft:liquid_carvers
+[17:59:49] [Paper Watchdog Thread/ERROR]:   Chunk Holder Priority - 3
+[17:59:49] [Paper Watchdog Thread/ERROR]:   Chunk Neighbors: 
+[17:59:49] [Paper Watchdog Thread/ERROR]:     -239,1 in world:
+[17:59:49] [Paper Watchdog Thread/ERROR]:     Chunk Holder - non-null
+[17:59:49] [Paper Watchdog Thread/ERROR]:     Chunk Status - minecraft:biomes
+[17:59:49] [Paper Watchdog Thread/ERROR]:     Chunk Ticket Status - minecraft:liquid_carvers
+[17:59:49] [Paper Watchdog Thread/ERROR]:     Chunk Holder Status - minecraft:biomes
+[17:59:49] [Paper Watchdog Thread/ERROR]:     Chunk Holder Priority - 4
+[17:59:49] [Paper Watchdog Thread/ERROR]:     -239,0 in world (CIRCULAR)
+[17:59:49] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:59:49] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[17:59:49] [Paper Watchdog Thread/ERROR]: 	PID: 38 | Suspended: false | Native: false | State: TIMED_WAITING
+[17:59:49] [Paper Watchdog Thread/ERROR]: 	Stack:
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.bm(IAsyncTaskHandler.java:131)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:120)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.ChunkProviderServer.getChunkAt(ChunkProviderServer.java:536)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.World.getType(World.java:736)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.getNMS(CraftBlock.java:79)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.isEmpty(CraftBlock.java:616)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.calculateRailPath(CommandCreateRails.java:98)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.buildRails(CommandCreateRails.java:81)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.onCommand(CommandCreateRails.java:54)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.PluginCommand.execute(PluginCommand.java:45)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:810)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.handleCommand(PlayerConnection.java:2171)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.c(PlayerConnection.java:1986)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:1939)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:50)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:8)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$ensureMainThread$1(PlayerConnectionUtils.java:35)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils$$Lambda$4301/0x0000000800e7ec40.run(Unknown Source)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(IAsyncTaskHandler.java:136)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(IAsyncTaskHandler.java:109)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:1262)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:1255)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:119)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:1216)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1130)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:289)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer$$Lambda$3163/0x00000008008fc440.run(Unknown Source)
+[17:59:49] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.Thread.run(Thread.java:834)
+[17:59:49] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:59:49] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[17:59:49] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:59:54] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - git-Paper-629 (MC: 1.16.5) ---
+[17:59:54] [Paper Watchdog Thread/ERROR]: The server has not responded for 20 seconds! Creating thread dump
+[17:59:54] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:59:54] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[17:59:54] [Paper Watchdog Thread/ERROR]: Chunk wait task info below: 
+[17:59:54] [Paper Watchdog Thread/ERROR]: -296,-1 in 'world:
+[17:59:54] [Paper Watchdog Thread/ERROR]: Load Task - none
+[17:59:54] [Paper Watchdog Thread/ERROR]: Save Task - none
+[17:59:54] [Paper Watchdog Thread/ERROR]: Chunk Holder - non-null
+[17:59:54] [Paper Watchdog Thread/ERROR]: Chunk Status - minecraft:light
+[17:59:54] [Paper Watchdog Thread/ERROR]: Chunk Ticket Status - minecraft:full
+[17:59:54] [Paper Watchdog Thread/ERROR]: Chunk Holder Status - minecraft:features
+[17:59:54] [Paper Watchdog Thread/ERROR]: Chunk Holder Priority - 2
+[17:59:54] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:59:54] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[17:59:54] [Paper Watchdog Thread/ERROR]: 	PID: 38 | Suspended: false | Native: false | State: TIMED_WAITING
+[17:59:54] [Paper Watchdog Thread/ERROR]: 	Stack:
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.bm(IAsyncTaskHandler.java:131)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:120)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.ChunkProviderServer.getChunkAt(ChunkProviderServer.java:536)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.World.getType(World.java:736)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.getNMS(CraftBlock.java:79)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.isEmpty(CraftBlock.java:616)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.calculateRailPath(CommandCreateRails.java:98)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.buildRails(CommandCreateRails.java:81)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.onCommand(CommandCreateRails.java:54)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.PluginCommand.execute(PluginCommand.java:45)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:810)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.handleCommand(PlayerConnection.java:2171)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.c(PlayerConnection.java:1986)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:1939)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:50)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:8)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$ensureMainThread$1(PlayerConnectionUtils.java:35)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils$$Lambda$4301/0x0000000800e7ec40.run(Unknown Source)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(IAsyncTaskHandler.java:136)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(IAsyncTaskHandler.java:109)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:1262)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:1255)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:119)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:1216)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1130)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:289)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer$$Lambda$3163/0x00000008008fc440.run(Unknown Source)
+[17:59:54] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.Thread.run(Thread.java:834)
+[17:59:54] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:59:54] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[17:59:54] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:59:59] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - git-Paper-629 (MC: 1.16.5) ---
+[17:59:59] [Paper Watchdog Thread/ERROR]: The server has not responded for 25 seconds! Creating thread dump
+[17:59:59] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:59:59] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[17:59:59] [Paper Watchdog Thread/ERROR]: Chunk wait task info below: 
+[17:59:59] [Paper Watchdog Thread/ERROR]: -362,-1 in 'world:
+[17:59:59] [Paper Watchdog Thread/ERROR]: Load Task - none
+[17:59:59] [Paper Watchdog Thread/ERROR]: Save Task - none
+[17:59:59] [Paper Watchdog Thread/ERROR]: Chunk Holder - non-null
+[17:59:59] [Paper Watchdog Thread/ERROR]: Chunk Status - minecraft:light
+[17:59:59] [Paper Watchdog Thread/ERROR]: Chunk Ticket Status - minecraft:full
+[17:59:59] [Paper Watchdog Thread/ERROR]: Chunk Holder Status - minecraft:features
+[17:59:59] [Paper Watchdog Thread/ERROR]: Chunk Holder Priority - 2
+[17:59:59] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:59:59] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[17:59:59] [Paper Watchdog Thread/ERROR]: 	PID: 38 | Suspended: false | Native: false | State: TIMED_WAITING
+[17:59:59] [Paper Watchdog Thread/ERROR]: 	Stack:
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.bm(IAsyncTaskHandler.java:131)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:120)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.ChunkProviderServer.getChunkAt(ChunkProviderServer.java:536)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.World.getType(World.java:736)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.getNMS(CraftBlock.java:79)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.isEmpty(CraftBlock.java:616)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.calculateRailPath(CommandCreateRails.java:98)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.buildRails(CommandCreateRails.java:81)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.onCommand(CommandCreateRails.java:54)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.PluginCommand.execute(PluginCommand.java:45)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:810)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.handleCommand(PlayerConnection.java:2171)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.c(PlayerConnection.java:1986)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:1939)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:50)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:8)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$ensureMainThread$1(PlayerConnectionUtils.java:35)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils$$Lambda$4301/0x0000000800e7ec40.run(Unknown Source)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(IAsyncTaskHandler.java:136)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(IAsyncTaskHandler.java:109)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:1262)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:1255)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:119)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:1216)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1130)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:289)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer$$Lambda$3163/0x00000008008fc440.run(Unknown Source)
+[17:59:59] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.Thread.run(Thread.java:834)
+[17:59:59] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:59:59] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[17:59:59] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:04] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - git-Paper-629 (MC: 1.16.5) ---
+[18:00:04] [Paper Watchdog Thread/ERROR]: The server has not responded for 30 seconds! Creating thread dump
+[18:00:04] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:04] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[18:00:04] [Paper Watchdog Thread/ERROR]: Chunk wait task info below: 
+[18:00:04] [Paper Watchdog Thread/ERROR]: -423,-1 in 'world:
+[18:00:04] [Paper Watchdog Thread/ERROR]: Load Task - none
+[18:00:04] [Paper Watchdog Thread/ERROR]: Save Task - none
+[18:00:04] [Paper Watchdog Thread/ERROR]: Chunk Holder - non-null
+[18:00:04] [Paper Watchdog Thread/ERROR]: Chunk Status - minecraft:light
+[18:00:04] [Paper Watchdog Thread/ERROR]: Chunk Ticket Status - minecraft:full
+[18:00:04] [Paper Watchdog Thread/ERROR]: Chunk Holder Status - minecraft:features
+[18:00:04] [Paper Watchdog Thread/ERROR]: Chunk Holder Priority - 2
+[18:00:04] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:04] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[18:00:04] [Paper Watchdog Thread/ERROR]: 	PID: 38 | Suspended: false | Native: false | State: TIMED_WAITING
+[18:00:04] [Paper Watchdog Thread/ERROR]: 	Stack:
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.bm(IAsyncTaskHandler.java:131)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:120)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.ChunkProviderServer.getChunkAt(ChunkProviderServer.java:536)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.World.getType(World.java:736)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.getNMS(CraftBlock.java:79)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.isEmpty(CraftBlock.java:616)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.calculateRailPath(CommandCreateRails.java:98)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.buildRails(CommandCreateRails.java:81)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.onCommand(CommandCreateRails.java:54)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.PluginCommand.execute(PluginCommand.java:45)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:810)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.handleCommand(PlayerConnection.java:2171)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.c(PlayerConnection.java:1986)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:1939)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:50)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:8)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$ensureMainThread$1(PlayerConnectionUtils.java:35)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils$$Lambda$4301/0x0000000800e7ec40.run(Unknown Source)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(IAsyncTaskHandler.java:136)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(IAsyncTaskHandler.java:109)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:1262)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:1255)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:119)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:1216)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1130)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:289)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer$$Lambda$3163/0x00000008008fc440.run(Unknown Source)
+[18:00:04] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.Thread.run(Thread.java:834)
+[18:00:04] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:04] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[18:00:04] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:09] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - git-Paper-629 (MC: 1.16.5) ---
+[18:00:09] [Paper Watchdog Thread/ERROR]: The server has not responded for 35 seconds! Creating thread dump
+[18:00:09] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:09] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[18:00:09] [Paper Watchdog Thread/ERROR]: Chunk wait task info below: 
+[18:00:09] [Paper Watchdog Thread/ERROR]: -476,-1 in 'world:
+[18:00:09] [Paper Watchdog Thread/ERROR]: Load Task - none
+[18:00:09] [Paper Watchdog Thread/ERROR]: Save Task - none
+[18:00:09] [Paper Watchdog Thread/ERROR]: Chunk Holder - non-null
+[18:00:09] [Paper Watchdog Thread/ERROR]: Chunk Status - minecraft:light
+[18:00:09] [Paper Watchdog Thread/ERROR]: Chunk Ticket Status - minecraft:full
+[18:00:09] [Paper Watchdog Thread/ERROR]: Chunk Holder Status - minecraft:features
+[18:00:09] [Paper Watchdog Thread/ERROR]: Chunk Holder Priority - 2
+[18:00:09] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:09] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[18:00:09] [Paper Watchdog Thread/ERROR]: 	PID: 38 | Suspended: false | Native: false | State: TIMED_WAITING
+[18:00:09] [Paper Watchdog Thread/ERROR]: 	Stack:
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.bm(IAsyncTaskHandler.java:131)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:120)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.ChunkProviderServer.getChunkAt(ChunkProviderServer.java:536)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.World.getType(World.java:736)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.getNMS(CraftBlock.java:79)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.isEmpty(CraftBlock.java:616)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.calculateRailPath(CommandCreateRails.java:98)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.buildRails(CommandCreateRails.java:81)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.onCommand(CommandCreateRails.java:54)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.PluginCommand.execute(PluginCommand.java:45)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:810)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.handleCommand(PlayerConnection.java:2171)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.c(PlayerConnection.java:1986)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:1939)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:50)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:8)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$ensureMainThread$1(PlayerConnectionUtils.java:35)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils$$Lambda$4301/0x0000000800e7ec40.run(Unknown Source)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(IAsyncTaskHandler.java:136)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(IAsyncTaskHandler.java:109)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:1262)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:1255)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:119)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:1216)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1130)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:289)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer$$Lambda$3163/0x00000008008fc440.run(Unknown Source)
+[18:00:09] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.Thread.run(Thread.java:834)
+[18:00:09] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:09] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[18:00:09] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:14] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - git-Paper-629 (MC: 1.16.5) ---
+[18:00:14] [Paper Watchdog Thread/ERROR]: The server has not responded for 40 seconds! Creating thread dump
+[18:00:14] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:14] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[18:00:14] [Paper Watchdog Thread/ERROR]: Chunk wait task info below: 
+[18:00:14] [Paper Watchdog Thread/ERROR]: -528,-1 in 'world:
+[18:00:14] [Paper Watchdog Thread/ERROR]: Load Task - none
+[18:00:14] [Paper Watchdog Thread/ERROR]: Save Task - none
+[18:00:14] [Paper Watchdog Thread/ERROR]: Chunk Holder - non-null
+[18:00:14] [Paper Watchdog Thread/ERROR]: Chunk Status - minecraft:light
+[18:00:14] [Paper Watchdog Thread/ERROR]: Chunk Ticket Status - minecraft:full
+[18:00:14] [Paper Watchdog Thread/ERROR]: Chunk Holder Status - minecraft:features
+[18:00:14] [Paper Watchdog Thread/ERROR]: Chunk Holder Priority - 2
+[18:00:14] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:14] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[18:00:14] [Paper Watchdog Thread/ERROR]: 	PID: 38 | Suspended: false | Native: false | State: TIMED_WAITING
+[18:00:14] [Paper Watchdog Thread/ERROR]: 	Stack:
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.bm(IAsyncTaskHandler.java:131)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:120)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.ChunkProviderServer.getChunkAt(ChunkProviderServer.java:536)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.World.getType(World.java:736)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.getNMS(CraftBlock.java:79)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.isEmpty(CraftBlock.java:616)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.calculateRailPath(CommandCreateRails.java:98)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.buildRails(CommandCreateRails.java:81)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.onCommand(CommandCreateRails.java:54)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.PluginCommand.execute(PluginCommand.java:45)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:810)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.handleCommand(PlayerConnection.java:2171)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.c(PlayerConnection.java:1986)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:1939)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:50)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:8)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$ensureMainThread$1(PlayerConnectionUtils.java:35)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils$$Lambda$4301/0x0000000800e7ec40.run(Unknown Source)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(IAsyncTaskHandler.java:136)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(IAsyncTaskHandler.java:109)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:1262)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:1255)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:119)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:1216)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1130)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:289)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer$$Lambda$3163/0x00000008008fc440.run(Unknown Source)
+[18:00:14] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.Thread.run(Thread.java:834)
+[18:00:14] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:14] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[18:00:14] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:19] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - git-Paper-629 (MC: 1.16.5) ---
+[18:00:19] [Paper Watchdog Thread/ERROR]: The server has not responded for 45 seconds! Creating thread dump
+[18:00:19] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:19] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[18:00:19] [Paper Watchdog Thread/ERROR]: Chunk wait task info below: 
+[18:00:19] [Paper Watchdog Thread/ERROR]: -593,-1 in 'world:
+[18:00:19] [Paper Watchdog Thread/ERROR]: Load Task - none
+[18:00:19] [Paper Watchdog Thread/ERROR]: Save Task - none
+[18:00:19] [Paper Watchdog Thread/ERROR]: Chunk Holder - non-null
+[18:00:19] [Paper Watchdog Thread/ERROR]: Chunk Status - minecraft:light
+[18:00:19] [Paper Watchdog Thread/ERROR]: Chunk Ticket Status - minecraft:full
+[18:00:19] [Paper Watchdog Thread/ERROR]: Chunk Holder Status - minecraft:features
+[18:00:19] [Paper Watchdog Thread/ERROR]: Chunk Holder Priority - 2
+[18:00:19] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:19] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[18:00:19] [Paper Watchdog Thread/ERROR]: 	PID: 38 | Suspended: false | Native: false | State: TIMED_WAITING
+[18:00:19] [Paper Watchdog Thread/ERROR]: 	Stack:
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.bm(IAsyncTaskHandler.java:131)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:120)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.ChunkProviderServer.getChunkAt(ChunkProviderServer.java:536)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.World.getType(World.java:736)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.getNMS(CraftBlock.java:79)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.block.CraftBlock.isEmpty(CraftBlock.java:616)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.calculateRailPath(CommandCreateRails.java:98)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.buildRails(CommandCreateRails.java:81)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.onCommand(CommandCreateRails.java:54)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.PluginCommand.execute(PluginCommand.java:45)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:810)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.handleCommand(PlayerConnection.java:2171)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.c(PlayerConnection.java:1986)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:1939)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:50)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:8)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$ensureMainThread$1(PlayerConnectionUtils.java:35)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils$$Lambda$4301/0x0000000800e7ec40.run(Unknown Source)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(IAsyncTaskHandler.java:136)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(IAsyncTaskHandler.java:109)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:1262)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:1255)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:119)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:1216)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1130)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:289)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer$$Lambda$3163/0x00000008008fc440.run(Unknown Source)
+[18:00:19] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.Thread.run(Thread.java:834)
+[18:00:19] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:19] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[18:00:19] [Paper Watchdog Thread/ERROR]: ------------------------------
+[18:00:22] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 47278ms or 945 ticks behind
+[18:00:22] [Server thread/INFO]: JesseFaithful lost connection: Disconnected
+[18:00:22] [Server thread/INFO]: JesseFaithful left the game
+[18:00:30] [User Authenticator #2/INFO]: UUID of player JesseFaithful is 1eb861b6-bc3c-49be-ad02-b336095e1daf
+[18:00:30] [Server thread/INFO]: JesseFaithful joined the game
+[18:00:30] [Server thread/INFO]: JesseFaithful[/127.0.0.1:64448] logged in with entity id 922 at ([world]183.90084140332672, 139.0, -13.300000011920929)
+[18:11:41] [Server thread/INFO]: JesseFaithful has made the advancement [Who is Cutting Onions?]
+[18:11:45] [Server thread/INFO]: JesseFaithful has made the advancement [Ice Bucket Challenge]
+[18:12:01] [Server thread/INFO]: JesseFaithful has made the advancement [We Need to Go Deeper]
+[18:12:51] [Server thread/INFO]: JesseFaithful issued server command: /locate fortress
+[18:12:54] [Server thread/INFO]: JesseFaithful issued server command: /tp @s -688 ~ -400
+[18:12:54] [Server thread/INFO]: [JesseFaithful: Teleported JesseFaithful to -687.5, 85.12808539677825, -399.5]
+[18:12:54] [Server thread/WARN]: JesseFaithful moved too quickly! 131.3885950487969,0.0,-132.4275874652439
+[18:13:06] [Server thread/INFO]: JesseFaithful has made the advancement [A Terrible Fortress]
+[18:13:30] [Server thread/INFO]: JesseFaithful lost connection: Disconnected
+[18:13:30] [Server thread/INFO]: JesseFaithful left the game
+[18:13:38] [Server thread/INFO]: Unknown command. Type "/help" for help.
+[18:13:42] [Server thread/INFO]: Stopping the server
+[18:13:42] [Server thread/INFO]: Stopping server
+[18:13:42] [Server thread/INFO]: [AutoPluginLoader] Disabling AutoPluginLoader v1.2.6
+[18:13:42] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[18:13:48] [Server thread/INFO]: Saving players
+[18:13:48] [Server thread/INFO]: Saving worlds
+[18:13:48] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[18:13:49] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[18:13:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[18:13:49] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[18:13:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[18:13:49] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[18:13:49] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[18:13:49] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[18:13:49] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[18:13:49] [Server thread/INFO]: Flushing Chunk IO
+[18:13:49] [Server thread/INFO]: Closing Thread Pool
+[18:13:49] [Server thread/INFO]: Closing Server
