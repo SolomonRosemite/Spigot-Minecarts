@@ -12,6 +12,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -94,7 +95,8 @@ public class CommandCreateRails implements CommandExecutor {
                 entry = new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
             else
             {
-                entry = new RailEntry(nextLocation.add(0, 1, 0), nextLocation.getBlock().getType(), prevEntry);
+//                entry = new RailEntry(nextLocation.add(0, 1, 0), nextLocation.getBlock().getType(), prevEntry);
+                entry = new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
                 entry.moveOneUp(direction);
             }
         } else {
@@ -125,9 +127,7 @@ public class CommandCreateRails implements CommandExecutor {
     }
 
     private void testBuild() {
-        entries.forEach(entry -> {
-            entry.location.getBlock().setType(currentMaterial);
-        });
+        entries.forEach(entry -> entry.location.getBlock().setType(currentMaterial));
     }
 
     private int[] getDirection(Vector vec, double xAbs, double zAbs) {
