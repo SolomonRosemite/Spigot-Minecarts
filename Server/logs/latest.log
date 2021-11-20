@@ -1,73 +1,141 @@
-[12:38:44] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[12:38:45] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[12:38:45] [Worker-Main-5/INFO]: Loaded 7 recipes
-[12:38:46] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[12:38:46] [Server thread/INFO]: Loading properties
-[12:38:46] [Server thread/INFO]: This server is running Paper version git-Paper-629 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[12:38:46] [Server thread/INFO]: Debug logging is disabled
-[12:38:46] [Server thread/INFO]: Using 4 threads for Netty based IO
-[12:38:46] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[12:38:46] [Server thread/INFO]: Default game type: SURVIVAL
-[12:38:46] [Server thread/INFO]: Generating keypair
-[12:38:46] [Server thread/INFO]: Starting Minecraft server on *:25565
-[12:38:46] [Server thread/INFO]: Using default channel type
-[12:38:47] [Server thread/INFO]: [Minecarts] Loading Minecarts v1.0
-[12:38:47] [Server thread/INFO]: [AutoPluginLoader] Loading AutoPluginLoader v1.2.6
-[12:38:47] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[12:38:47] [Server thread/INFO]: Preparing level "world"
-[12:38:47] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[12:38:47] [Server thread/INFO]: Loaded 0 spawn chunks for world world
-[12:38:47] [Server thread/INFO]: Preparing spawn area: 0%
-[12:38:48] [Server thread/INFO]: Preparing spawn area: 4%
-[12:38:48] [Server thread/INFO]: Time elapsed: 643 ms
-[12:38:48] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[12:38:48] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
-[12:38:48] [Server thread/INFO]: Preparing spawn area: 0%
-[12:38:48] [Server thread/INFO]: Time elapsed: 119 ms
-[12:38:48] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[12:38:48] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
-[12:38:48] [Server thread/INFO]: Time elapsed: 261 ms
-[12:38:48] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[12:38:48] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[12:38:48] [Server thread/INFO]: [AutoPluginLoader] Enabling AutoPluginLoader v1.2.6
-[12:38:48] [Server thread/INFO]: [AutoPluginLoader] Plugin has successfully loaded. (Took 38ms)
-[12:38:48] [Server thread/INFO]: Running delayed init tasks
-[12:38:48] [Server thread/INFO]: Done (2.273s)! For help, type "help"
-[12:38:48] [Server thread/INFO]: Timings Reset
-[12:39:09] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[12:39:09] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[12:39:09] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[12:39:09] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[12:39:09] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[12:39:09] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[12:39:09] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[12:39:09] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 116ms)
-[12:39:12] [User Authenticator #1/INFO]: UUID of player JesseFaithful is 1eb861b6-bc3c-49be-ad02-b336095e1daf
-[12:39:12] [Server thread/INFO]: JesseFaithful joined the game
-[12:39:12] [Server thread/INFO]: JesseFaithful[/127.0.0.1:64734] logged in with entity id 99 at ([world]544.0136456289752, 66.91199617967004, -677.7026292385564)
-[12:39:27] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[12:39:27] [Server thread/INFO]: [Log]:Build Rails!
-[12:39:38] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[12:39:38] [Server thread/INFO]: [Log]:Build Rails!
-[12:42:38] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[12:42:38] [Server thread/INFO]: [Log]:Cleared all entries!
-[12:42:57] [Server thread/INFO]: Stopping the server
-[12:42:57] [Server thread/INFO]: Stopping server
-[12:42:57] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[12:42:57] [Server thread/INFO]: [AutoPluginLoader] Disabling AutoPluginLoader v1.2.6
-[12:42:57] [Server thread/INFO]: Saving players
-[12:42:58] [Server thread/INFO]: JesseFaithful lost connection: Server closed
-[12:42:58] [Server thread/INFO]: JesseFaithful left the game
-[12:42:58] [Server thread/INFO]: Saving worlds
-[12:42:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[12:42:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[12:42:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[12:42:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[12:42:59] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[12:42:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[12:42:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[12:42:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[12:42:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[12:42:59] [Server thread/INFO]: Flushing Chunk IO
-[12:42:59] [Server thread/INFO]: Closing Thread Pool
-[12:42:59] [Server thread/INFO]: Closing Server
+[12:44:56] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[12:44:56] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[12:44:57] [Worker-Main-5/INFO]: Loaded 7 recipes
+[12:44:58] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[12:44:58] [Server thread/INFO]: Loading properties
+[12:44:58] [Server thread/INFO]: This server is running Paper version git-Paper-629 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[12:44:58] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[12:44:58] [Server thread/INFO]: Using 4 threads for Netty based IO
+[12:44:58] [Server thread/INFO]: Debug logging is disabled
+[12:44:58] [Server thread/INFO]: Default game type: SURVIVAL
+[12:44:58] [Server thread/INFO]: Generating keypair
+[12:44:58] [Server thread/INFO]: Starting Minecraft server on *:25565
+[12:44:58] [Server thread/INFO]: Using default channel type
+[12:44:59] [Server thread/INFO]: [Minecarts] Loading Minecarts v1.0
+[12:44:59] [Server thread/INFO]: [AutoPluginLoader] Loading AutoPluginLoader v1.2.6
+[12:44:59] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[12:44:59] [Server thread/INFO]: Preparing level "world"
+[12:44:59] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[12:44:59] [Server thread/INFO]: Loaded 0 spawn chunks for world world
+[12:44:59] [Server thread/INFO]: Preparing spawn area: 0%
+[12:44:59] [Server thread/INFO]: Preparing spawn area: 3%
+[12:44:59] [Server thread/INFO]: Time elapsed: 601 ms
+[12:44:59] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[12:45:00] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
+[12:45:00] [Server thread/INFO]: Preparing spawn area: 0%
+[12:45:00] [Server thread/INFO]: Time elapsed: 223 ms
+[12:45:00] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[12:45:00] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
+[12:45:00] [Server thread/INFO]: Time elapsed: 77 ms
+[12:45:00] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[12:45:00] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[12:45:00] [Server thread/INFO]: [AutoPluginLoader] Enabling AutoPluginLoader v1.2.6
+[12:45:00] [Server thread/INFO]: [AutoPluginLoader] Plugin has successfully loaded. (Took 39ms)
+[12:45:00] [Server thread/INFO]: Running delayed init tasks
+[12:45:00] [Server thread/INFO]: Done (2.178s)! For help, type "help"
+[12:45:00] [Server thread/INFO]: Timings Reset
+[12:45:04] [User Authenticator #1/INFO]: UUID of player JesseFaithful is 1eb861b6-bc3c-49be-ad02-b336095e1daf
+[12:45:04] [Server thread/INFO]: JesseFaithful joined the game
+[12:45:04] [Server thread/INFO]: JesseFaithful[/127.0.0.1:64786] logged in with entity id 97 at ([world]541.3736496370421, 64.0, -669.6999999880791)
+[12:45:16] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[12:45:16] [Server thread/INFO]: [Log]:Build Rails!
+[12:46:43] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[12:46:43] [Server thread/INFO]: [Log]:Cleared all entries!
+[12:46:57] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[12:46:57] [Server thread/INFO]: [Log]:Build Rails!
+[12:47:08] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[12:47:08] [Server thread/INFO]: [Log]:Cleared all entries!
+[12:47:09] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[12:47:09] [Server thread/INFO]: [Log]:Build Rails!
+[12:47:11] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[12:47:11] [Server thread/INFO]: [Log]:Cleared all entries!
+[12:47:16] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[12:47:16] [Server thread/INFO]: [Log]:Build Rails!
+[12:48:39] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[12:48:39] [Server thread/INFO]: [Log]:Cleared all entries!
+[12:48:46] [Server thread/INFO]: JesseFaithful issued server command: /rails b#
+[12:48:46] [Server thread/INFO]: [Log]:Build Rails!
+[12:48:48] [Server thread/INFO]: JesseFaithful issued server command: /rails bc
+[12:48:48] [Server thread/INFO]: [Log]:Build Rails!
+[12:48:51] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[12:48:51] [Server thread/INFO]: [Log]:Cleared all entries!
+[12:48:58] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[12:48:58] [Server thread/INFO]: [Log]:Build Rails!
+[12:48:59] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[12:48:59] [Server thread/INFO]: [Log]:Cleared all entries!
+[12:50:49] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[12:50:49] [Server thread/INFO]: [Log]:Build Rails!
+[12:51:42] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[12:51:42] [Server thread/INFO]: [Log]:Cleared all entries!
+[12:57:55] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[12:57:55] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[12:57:55] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[12:57:55] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[12:57:55] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[12:57:55] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[12:57:55] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[12:57:55] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 147ms)
+[12:58:06] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[12:58:06] [Server thread/INFO]: [Log]:Build Rails!
+[12:58:15] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[12:58:15] [Server thread/INFO]: [Log]:Cleared all entries!
+[13:06:48] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:06:48] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:06:48] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:06:48] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:06:48] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:06:48] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[13:06:48] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:06:48] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 119ms)
+[13:06:52] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[13:06:52] [Server thread/INFO]: [Log]:Build Rails!
+[13:07:13] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[13:07:13] [Server thread/INFO]: [Log]:Cleared all entries!
+[13:07:24] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[13:07:24] [Server thread/INFO]: [Log]:Build Rails!
+[13:07:26] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[13:07:26] [Server thread/INFO]: [Log]:Cleared all entries!
+[13:07:41] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:07:41] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:07:41] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:07:41] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:07:41] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:07:41] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[13:07:41] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:07:41] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 100ms)
+[13:07:42] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[13:07:42] [Server thread/INFO]: [Log]:Build Rails!
+[13:09:39] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[13:09:39] [Server thread/INFO]: [Log]:Cleared all entries!
+[13:09:47] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:09:47] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:09:47] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:09:47] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:09:47] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:09:47] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[13:09:47] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:09:47] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 95ms)
+[13:09:51] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[13:09:51] [Server thread/INFO]: [Log]:Build Rails!
+[13:29:43] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[13:29:43] [Server thread/INFO]: [Log]:Cleared all entries!
+[13:31:51] [Server thread/INFO]: Stopping the server
+[13:31:51] [Server thread/INFO]: Stopping server
+[13:31:51] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:31:51] [Server thread/INFO]: [AutoPluginLoader] Disabling AutoPluginLoader v1.2.6
+[13:31:51] [Server thread/INFO]: Saving players
+[13:31:51] [Server thread/INFO]: JesseFaithful lost connection: Server closed
+[13:31:51] [Server thread/INFO]: JesseFaithful left the game
+[13:31:51] [Server thread/INFO]: Saving worlds
+[13:31:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[13:31:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[13:31:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[13:31:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[13:31:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[13:31:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[13:31:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[13:31:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[13:31:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[13:31:51] [Server thread/INFO]: Flushing Chunk IO
+[13:31:51] [Server thread/INFO]: Closing Thread Pool
+[13:31:51] [Server thread/INFO]: Closing Server

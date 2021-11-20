@@ -5,8 +5,6 @@ import com.rosemite.minecarts.helpers.Convert;
 import org.bukkit.Location;
 import org.bukkit.Material;
 
-import java.util.Locale;
-
 public class RailEntry {
     public Material prevMaterial;
     public Location location;
@@ -18,21 +16,36 @@ public class RailEntry {
         this.prevEntry = prevEntry;
     }
 
-    public void moveOneUp(int[] direction) {
-        location = location.clone().add(0, 1, 0);
+    public RailEntry moveUp(int heightDifference, int[] direction) {
+        location.add(0, --heightDifference, 0);
 
-        if (prevEntry != null && prevEntry.location.getBlockY() == location.getBlockY() - 1) {
-            return;
+        if (heightDifference != 0) {
+            if (prevEntry != null) {
+                return prevEntry.moveUp(heightDifference, direction);
+            }
+
+            Location newLocation = location.clone().add(0, -1, 0);
+            newLocation = Common.getNextLocationReverse(newLocation, direction[0], direction[1]);
+            return new RailEntry(newLocation, newLocation.getBlock().getType(), null);
         }
 
-        if (prevEntry != null)
-            prevEntry.moveOneUp(direction);
-
-        Location l2 = location.clone().add(0, -2, 0);
-        l2 = Common.getNextLocation(l2, direction[0] * -1, direction[1] * -1);
-
-        prevEntry = new RailEntry(l2, l2.getBlock().getType(), null);
+        return null;
     }
+//    public void moveOneUp(int[] direction) {
+//        location = location.clone().add(0, 1, 0);
+//
+//        if (prevEntry != null && prevEntry.location.getBlockY() == location.getBlockY() - 1) {
+//            return;
+//        }
+//
+//        if (prevEntry != null)
+//            prevEntry.moveOneUp(direction);
+//
+//        Location l2 = location.clone().add(0, -2, 0);
+//        l2 = Common.getNextLocation(l2, direction[0] * -1, direction[1] * -1);
+//
+//        prevEntry = new RailEntry(l2, l2.getBlock().getType(), null);
+//    }
 
     public String toString() {
         return Convert.toJson(this);

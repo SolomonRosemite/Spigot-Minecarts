@@ -12,9 +12,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
 
-import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class CommandCreateRails implements CommandExecutor {
     private final LinkedList<RailEntry> entries;
@@ -83,33 +81,47 @@ public class CommandCreateRails implements CommandExecutor {
 
         int[] direction = getDirection(vec, xAbs, zAbs);
 
-        RailEntry entry;
-
         Location nextLocation = Common.getNextLocation(startingLocation, direction[0], direction[1]);
-        Material materialInFrontFirst = nextLocation.getBlock().getType();
-        Material materialInFront = Common.getNextLocation(nextLocation, direction[0], direction[1]).getBlock().getType();
 
-        if ((!materialInFront.isAir() || !materialInFrontFirst.isAir()) && materialInFront != currentMaterial) {
-            nextLocation.add(0, 1, 0);
-            if (nextLocation.getBlock().isEmpty())
-                entry = new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
-            else
-            {
-//                entry = new RailEntry(nextLocation.add(0, 1, 0), nextLocation.getBlock().getType(), prevEntry);
-                entry = new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
-                entry.moveOneUp(direction);
-            }
-        } else {
-            // Check if we can go one down
-            Location l = nextLocation.clone().add(0, -1, 0);
-            if (l.getBlock().isEmpty() && l.add(0, -1, 0).getBlock().isEmpty() && Common.getNextLocation(l, direction[0] * -1, direction[1] * -1).getBlock().isEmpty()) {
-                entry = new RailEntry(nextLocation.add(0, -1, 0), nextLocation.getBlock().getType(), prevEntry);
-            } else {
-                entry = new RailEntry(nextLocation, nextLocation.clone().getBlock().getType(), prevEntry);
-            }
+        if (nextLocation.getBlock().isEmpty()) {
+            return new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
         }
 
-        return entry;
+        int heightDifference = getNextEmptyLocationHeight(nextLocation);
+
+        nextLocation.add(0, heightDifference, 0);
+
+        RailEntry newEntry = prevEntry.moveUp(heightDifference, direction);
+        if (newEntry != null) {
+            entries.addFirst(newEntry);
+        }
+
+        return new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
+//        Location nextLocation = Common.getNextLocation(startingLocation, direction[0], direction[1]);
+//        Material materialInFrontFirst = nextLocation.getBlock().getType();
+//        Material materialInFront = Common.getNextLocation(nextLocation, direction[0], direction[1]).getBlock().getType();
+//
+//        if ((!materialInFront.isAir() || !materialInFrontFirst.isAir()) && materialInFront != currentMaterial) {
+//            nextLocation.add(0, 1, 0);
+//            if (nextLocation.getBlock().isEmpty())
+//                entry = new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
+//            else
+//            {
+////                entry = new RailEntry(nextLocation.add(0, 1, 0), nextLocation.getBlock().getType(), prevEntry);
+//                entry = new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
+//                entry.moveOneUp(direction);
+//            }
+//        } else {
+//            // Check if we can go one down
+//            Location l = nextLocation.clone().add(0, -1, 0);
+//            if (l.getBlock().isEmpty() && l.add(0, -1, 0).getBlock().isEmpty() && Common.getNextLocation(l, direction[0] * -1, direction[1] * -1).getBlock().isEmpty()) {
+//                entry = new RailEntry(nextLocation.add(0, -1, 0), nextLocation.getBlock().getType(), prevEntry);
+//            } else {
+//                entry = new RailEntry(nextLocation, nextLocation.clone().getBlock().getType(), prevEntry);
+//            }
+//        }
+//
+//        return entry;
     }
 
     private void clearPlacedBlocks(Location l) {
@@ -124,6 +136,17 @@ public class CommandCreateRails implements CommandExecutor {
             entry.location.getBlock().setType(Material.REDSTONE_BLOCK);
             entry.location.clone().add(0, 1, 0).getBlock().setType(Material.POWERED_RAIL);
         });
+    }
+
+    private int getNextEmptyLocationHeight(Location startingLocation) {
+        Location l = startingLocation.clone();
+
+        int difference;
+        while (!l.getBlock().isEmpty()) {
+            l.add(0, 1, 0);
+        }
+
+        return l.getBlockY() - startingLocation.getBlockY();
     }
 
     private void testBuild() {
