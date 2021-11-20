@@ -14,4 +14,7 @@ public class Convert {
     public static String toJson(Object value) {
         return gson.toJson(value);
     }
+    public static <T> T fromJson(String value, Class<T> type) {
+        return gson.fromJson(value, type);
+    }
 }

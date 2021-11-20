@@ -19,7 +19,7 @@ public class RailEntry {
     public RailEntry moveUp(int heightDifference, int[] direction) {
         location.add(0, --heightDifference, 0);
 
-        if (heightDifference != 0) {
+        if (heightDifference > 0) {
             if (prevEntry != null) {
                 return prevEntry.moveUp(heightDifference, direction);
             }

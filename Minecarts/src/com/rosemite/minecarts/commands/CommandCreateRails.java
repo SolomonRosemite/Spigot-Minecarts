@@ -19,6 +19,7 @@ public class CommandCreateRails implements CommandExecutor {
     private final LinkedList<RailEntry> entries;
     private final Material currentMaterial = Material.POLISHED_BASALT;
     private final boolean fullTest = true;
+    private final int distance = 999;
 
     public CommandCreateRails() {
         entries = new LinkedList<>();
@@ -31,6 +32,7 @@ public class CommandCreateRails implements CommandExecutor {
         }
 
         Player p = (Player) sender;
+        Location l = Convert.fromJson("{ \"world\": \"world\", \"x\": 541.3000000119209, \"y\": 64.0, \"z\": -669.3424957397692, \"yaw\": 272.16498, \"pitch\": 2.430829 }", Location.class);
 
         if (args.length > 0)
         {
@@ -45,7 +47,7 @@ public class CommandCreateRails implements CommandExecutor {
 
             if (req.startsWith("b")) {
                 notify("Build Rails!", p);
-                buildRails(p, 100);
+                buildRails(l, distance);
                 return true;
             }
 
@@ -60,18 +62,22 @@ public class CommandCreateRails implements CommandExecutor {
         return true;
     }
 
-    private void buildRails(Player player, int distance) {
-        Location prevLocation = player.getLocation();
+    private void buildRails(Location location, int distance) {
+        Location prevLocation = location.clone();
+        Log.d(prevLocation.getBlockX());
+        Log.d(prevLocation.getX());
+//        Location l2 = prevLocation;
+        Location l2 = new Location(prevLocation.getWorld(), prevLocation.getBlockX(), prevLocation.getBlockY(), prevLocation.getBlockZ(), prevLocation.getYaw(), prevLocation.getPitch());
 
         for (int i = 0; i < distance; i++) {
             RailEntry prevEntry = i != 0 ? entries.getLast() : null;
-            RailEntry railEntry = calculateRailPath(prevLocation, prevEntry);
+            RailEntry railEntry = calculateRailPath(l2, prevEntry);
             entries.add(railEntry);
 
-            prevLocation = railEntry.location.clone();
+            l2 = railEntry.location.clone();
         }
 
-//        verifyAndFix();
+        verifyAndFix();
 
         if (fullTest)
             buildRoute();
@@ -95,7 +101,7 @@ public class CommandCreateRails implements CommandExecutor {
 //            if (l.getBlock().isEmpty() && l.add(0, -1, 0).getBlock().isEmpty() && Common.getNextLocation(l, direction[0] * -1, direction[1] * -1).getBlock().isEmpty()) {
 
             if (l.getBlock().isEmpty() && l.add(0, -1, 0).getBlock().isEmpty()) {
-                return new RailEntry(nextLocation.add(0, -1, 0), nextLocation.getBlock().getType(), prevEntry);
+//                return new RailEntry(nextLocation.add(0, -1, 0), nextLocation.getBlock().getType(), prevEntry);
             }
 
             return new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
@@ -105,9 +111,12 @@ public class CommandCreateRails implements CommandExecutor {
 
         nextLocation.add(0, heightDifference, 0);
 
-        RailEntry newEntry = prevEntry.moveUp(heightDifference, direction);
-        if (newEntry != null) {
-            entries.addFirst(newEntry);
+        if (prevEntry != null) {
+            RailEntry newEntry = prevEntry.moveUp(heightDifference, direction);
+
+            if (newEntry != null) {
+                entries.addFirst(newEntry);
+            }
         }
 
         return new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
@@ -136,21 +145,22 @@ public class CommandCreateRails implements CommandExecutor {
             e2 = queue.get(i-1);
             e3 = queue.get(i);
 
-            if (e1.location.getBlockY() == e3.location.getBlockY() && e2.location.getBlockY() > e1.location.getBlockY()) {
+            if (e1.location.getBlockY() == e3.location.getBlockY() && e2.location.getBlockY() < e1.location.getBlockY()) {
                 e2.location.add(0, 1, 0);
+                e2.location.getBlock().setType(Material.DIAMOND_BLOCK);
             }
         }
     }
 
     private void clearPlacedBlocks(Location l) {
-        //noinspection ConstantConditions
-        entries.forEach(entry -> l.getWorld().getBlockAt(entry.location.getBlockX(), entry.location.getBlockY(), entry.location.getBlockZ()).setType(entry.prevMaterial));
-
         if (fullTest)
         {
             //noinspection ConstantConditions
             entries.forEach(entry -> l.getWorld().getBlockAt(entry.location.getBlockX(), entry.location.getBlockY() + 1, entry.location.getBlockZ()).setType(Material.AIR));
         }
+
+        //noinspection ConstantConditions
+        entries.forEach(entry -> l.getWorld().getBlockAt(entry.location.getBlockX(), entry.location.getBlockY(), entry.location.getBlockZ()).setType(entry.prevMaterial));
     }
 
     private void buildRoute() {
