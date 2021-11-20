@@ -1,141 +1,689 @@
-[12:44:56] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[12:44:56] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[12:44:57] [Worker-Main-5/INFO]: Loaded 7 recipes
-[12:44:58] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[12:44:58] [Server thread/INFO]: Loading properties
-[12:44:58] [Server thread/INFO]: This server is running Paper version git-Paper-629 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[12:44:58] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[12:44:58] [Server thread/INFO]: Using 4 threads for Netty based IO
-[12:44:58] [Server thread/INFO]: Debug logging is disabled
-[12:44:58] [Server thread/INFO]: Default game type: SURVIVAL
-[12:44:58] [Server thread/INFO]: Generating keypair
-[12:44:58] [Server thread/INFO]: Starting Minecraft server on *:25565
-[12:44:58] [Server thread/INFO]: Using default channel type
-[12:44:59] [Server thread/INFO]: [Minecarts] Loading Minecarts v1.0
-[12:44:59] [Server thread/INFO]: [AutoPluginLoader] Loading AutoPluginLoader v1.2.6
-[12:44:59] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[12:44:59] [Server thread/INFO]: Preparing level "world"
-[12:44:59] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[12:44:59] [Server thread/INFO]: Loaded 0 spawn chunks for world world
-[12:44:59] [Server thread/INFO]: Preparing spawn area: 0%
-[12:44:59] [Server thread/INFO]: Preparing spawn area: 3%
-[12:44:59] [Server thread/INFO]: Time elapsed: 601 ms
-[12:44:59] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[12:45:00] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
-[12:45:00] [Server thread/INFO]: Preparing spawn area: 0%
-[12:45:00] [Server thread/INFO]: Time elapsed: 223 ms
-[12:45:00] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[12:45:00] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
-[12:45:00] [Server thread/INFO]: Time elapsed: 77 ms
-[12:45:00] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[12:45:00] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[12:45:00] [Server thread/INFO]: [AutoPluginLoader] Enabling AutoPluginLoader v1.2.6
-[12:45:00] [Server thread/INFO]: [AutoPluginLoader] Plugin has successfully loaded. (Took 39ms)
-[12:45:00] [Server thread/INFO]: Running delayed init tasks
-[12:45:00] [Server thread/INFO]: Done (2.178s)! For help, type "help"
-[12:45:00] [Server thread/INFO]: Timings Reset
-[12:45:04] [User Authenticator #1/INFO]: UUID of player JesseFaithful is 1eb861b6-bc3c-49be-ad02-b336095e1daf
-[12:45:04] [Server thread/INFO]: JesseFaithful joined the game
-[12:45:04] [Server thread/INFO]: JesseFaithful[/127.0.0.1:64786] logged in with entity id 97 at ([world]541.3736496370421, 64.0, -669.6999999880791)
-[12:45:16] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[12:45:16] [Server thread/INFO]: [Log]:Build Rails!
-[12:46:43] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[12:46:43] [Server thread/INFO]: [Log]:Cleared all entries!
-[12:46:57] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[12:46:57] [Server thread/INFO]: [Log]:Build Rails!
-[12:47:08] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[12:47:08] [Server thread/INFO]: [Log]:Cleared all entries!
-[12:47:09] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[12:47:09] [Server thread/INFO]: [Log]:Build Rails!
-[12:47:11] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[12:47:11] [Server thread/INFO]: [Log]:Cleared all entries!
-[12:47:16] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[12:47:16] [Server thread/INFO]: [Log]:Build Rails!
-[12:48:39] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[12:48:39] [Server thread/INFO]: [Log]:Cleared all entries!
-[12:48:46] [Server thread/INFO]: JesseFaithful issued server command: /rails b#
-[12:48:46] [Server thread/INFO]: [Log]:Build Rails!
-[12:48:48] [Server thread/INFO]: JesseFaithful issued server command: /rails bc
-[12:48:48] [Server thread/INFO]: [Log]:Build Rails!
-[12:48:51] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[12:48:51] [Server thread/INFO]: [Log]:Cleared all entries!
-[12:48:58] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[12:48:58] [Server thread/INFO]: [Log]:Build Rails!
-[12:48:59] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[12:48:59] [Server thread/INFO]: [Log]:Cleared all entries!
-[12:50:49] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[12:50:49] [Server thread/INFO]: [Log]:Build Rails!
-[12:51:42] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[12:51:42] [Server thread/INFO]: [Log]:Cleared all entries!
-[12:57:55] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[12:57:55] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[12:57:55] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[12:57:55] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[12:57:55] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[12:57:55] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[12:57:55] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[12:57:55] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 147ms)
-[12:58:06] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[12:58:06] [Server thread/INFO]: [Log]:Build Rails!
-[12:58:15] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[12:58:15] [Server thread/INFO]: [Log]:Cleared all entries!
-[13:06:48] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[13:06:48] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[13:06:48] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[13:06:48] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[13:06:48] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[13:06:48] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[13:06:48] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[13:06:48] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 119ms)
-[13:06:52] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[13:06:52] [Server thread/INFO]: [Log]:Build Rails!
-[13:07:13] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[13:07:13] [Server thread/INFO]: [Log]:Cleared all entries!
-[13:07:24] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[13:07:24] [Server thread/INFO]: [Log]:Build Rails!
-[13:07:26] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[13:07:26] [Server thread/INFO]: [Log]:Cleared all entries!
-[13:07:41] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[13:07:41] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[13:07:41] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[13:07:41] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[13:07:41] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[13:07:41] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[13:07:41] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[13:07:41] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 100ms)
-[13:07:42] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[13:07:42] [Server thread/INFO]: [Log]:Build Rails!
-[13:09:39] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[13:09:39] [Server thread/INFO]: [Log]:Cleared all entries!
-[13:09:47] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[13:09:47] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[13:09:47] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[13:09:47] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[13:09:47] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[13:09:47] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[13:09:47] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[13:09:47] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 95ms)
-[13:09:51] [Server thread/INFO]: JesseFaithful issued server command: /rails b
-[13:09:51] [Server thread/INFO]: [Log]:Build Rails!
-[13:29:43] [Server thread/INFO]: JesseFaithful issued server command: /rails c
-[13:29:43] [Server thread/INFO]: [Log]:Cleared all entries!
-[13:31:51] [Server thread/INFO]: Stopping the server
-[13:31:51] [Server thread/INFO]: Stopping server
-[13:31:51] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[13:31:51] [Server thread/INFO]: [AutoPluginLoader] Disabling AutoPluginLoader v1.2.6
-[13:31:51] [Server thread/INFO]: Saving players
-[13:31:51] [Server thread/INFO]: JesseFaithful lost connection: Server closed
-[13:31:51] [Server thread/INFO]: JesseFaithful left the game
-[13:31:51] [Server thread/INFO]: Saving worlds
-[13:31:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[13:31:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[13:31:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[13:31:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[13:31:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[13:31:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[13:31:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[13:31:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[13:31:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[13:31:51] [Server thread/INFO]: Flushing Chunk IO
-[13:31:51] [Server thread/INFO]: Closing Thread Pool
-[13:31:51] [Server thread/INFO]: Closing Server
+[13:32:13] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[13:32:13] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[13:32:13] [Worker-Main-5/INFO]: Loaded 7 recipes
+[13:32:14] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[13:32:14] [Server thread/INFO]: Loading properties
+[13:32:14] [Server thread/INFO]: This server is running Paper version git-Paper-629 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[13:32:14] [Server thread/INFO]: Debug logging is disabled
+[13:32:14] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:32:14] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:32:14] [Server thread/INFO]: Default game type: SURVIVAL
+[13:32:14] [Server thread/INFO]: Generating keypair
+[13:32:14] [Server thread/INFO]: Starting Minecraft server on *:25565
+[13:32:14] [Server thread/INFO]: Using default channel type
+[13:32:15] [Server thread/INFO]: [Minecarts] Loading Minecarts v1.0
+[13:32:15] [Server thread/INFO]: [AutoPluginLoader] Loading AutoPluginLoader v1.2.6
+[13:32:15] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:32:15] [Server thread/INFO]: Preparing level "world"
+[13:32:15] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[13:32:16] [Server thread/INFO]: Loaded 0 spawn chunks for world world
+[13:32:16] [Server thread/INFO]: Preparing spawn area: 0%
+[13:32:16] [Server thread/INFO]: Preparing spawn area: 3%
+[13:32:16] [Server thread/INFO]: Time elapsed: 594 ms
+[13:32:16] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[13:32:16] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
+[13:32:16] [Server thread/INFO]: Preparing spawn area: 0%
+[13:32:16] [Server thread/INFO]: Time elapsed: 137 ms
+[13:32:16] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[13:32:16] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
+[13:32:16] [Server thread/INFO]: Time elapsed: 153 ms
+[13:32:16] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:32:16] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:32:16] [Server thread/INFO]: [AutoPluginLoader] Enabling AutoPluginLoader v1.2.6
+[13:32:16] [Server thread/INFO]: [AutoPluginLoader] Plugin has successfully loaded. (Took 47ms)
+[13:32:16] [Server thread/INFO]: Running delayed init tasks
+[13:32:16] [Server thread/INFO]: Done (2.150s)! For help, type "help"
+[13:32:16] [Server thread/INFO]: Timings Reset
+[13:32:24] [User Authenticator #1/INFO]: UUID of player JesseFaithful is 1eb861b6-bc3c-49be-ad02-b336095e1daf
+[13:32:24] [Server thread/INFO]: JesseFaithful joined the game
+[13:32:24] [Server thread/INFO]: JesseFaithful[/127.0.0.1:55807] logged in with entity id 100 at ([world]551.363939959101, 67.11650136792812, -669.2268150988824)
+[13:40:00] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:40:00] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:40:00] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:40:00] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:40:00] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:40:00] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[13:40:00] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:40:00] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 120ms)
+[13:40:17] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[13:40:17] [Server thread/INFO]: [Log]:Build Rails!
+[13:40:32] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - git-Paper-629 (MC: 1.16.5) ---
+[13:40:32] [Paper Watchdog Thread/ERROR]: The server has not responded for 15 seconds! Creating thread dump
+[13:40:32] [Paper Watchdog Thread/ERROR]: ------------------------------
+[13:40:32] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[13:40:32] [Paper Watchdog Thread/ERROR]: ------------------------------
+[13:40:32] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[13:40:32] [Paper Watchdog Thread/ERROR]: 	PID: 38 | Suspended: false | Native: false | State: RUNNABLE
+[13:40:32] [Paper Watchdog Thread/ERROR]: 	Stack:
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.Class.isAssignableFrom(Native Method)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/jdk.internal.reflect.UnsafeFieldAccessorImpl.ensureObj(UnsafeFieldAccessorImpl.java:57)
+[13:40:32] [Server thread/INFO]: [Log]:{7={
+  "prevMaterial": "AIR",
+  "location": {
+    "world": "world",
+    "x": 548.3000000119209,
+    "y": 72.0,
+    "z": -669.6999999880791,
+    "yaw": 271.58478,
+    "pitch": 9.2883
+  },
+  "prevEntry": {
+    "prevMaterial": "AIR",
+    "location": {
+      "world": "world",
+      "x": 547.3000000119209,
+      "y": 71.0,
+      "z": -669.6999999880791,
+      "yaw": 271.58478,
+      "pitch": 9.2883
+    },
+    "prevEntry": {
+      "prevMaterial": "AIR",
+      "location": {
+        "world": "world",
+        "x": 546.3000000119209,
+        "y": 70.0,
+        "z": -669.6999999880791,
+        "yaw": 271.58478,
+        "pitch": 9.2883
+      },
+      "prevEntry": {
+        "prevMaterial": "AIR",
+        "location": {
+          "world": "world",
+          "x": 545.3000000119209,
+          "y": 69.0,
+          "z": -669.6999999880791,
+          "yaw": 271.58478,
+          "pitch": 9.2883
+        },
+        "prevEntry": {
+          "prevMaterial": "AIR",
+          "location": {
+            "world": "world",
+            "x": 544.3000000119209,
+            "y": 68.0,
+            "z": -669.6999999880791,
+            "yaw": 271.58478,
+            "pitch": 9.2883
+          },
+          "prevEntry": {
+            "prevMaterial": "AIR",
+            "location": {
+              "world": "world",
+              "x": 543.3000000119209,
+              "y": 67.0,
+              "z": -669.6999999880791,
+              "yaw": 271.58478,
+              "pitch": 9.2883
+            },
+            "prevEntry": {
+              "prevMaterial": "AIR",
+              "location": {
+                "world": "world",
+                "x": 542.3000000119209,
+                "y": 66.0,
+                "z": -669.6999999880791,
+                "yaw": 271.58478,
+                "pitch": 9.2883
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}, 8={
+  "prevMaterial": "AIR",
+  "location": {
+    "world": "world",
+    "x": 549.3000000119209,
+    "y": 73.0,
+    "z": -669.6999999880791,
+    "yaw": 271.58478,
+    "pitch": 9.2883
+  },
+  "prevEntry": {
+    "prevMaterial": "AIR",
+    "location": {
+      "world": "world",
+      "x": 548.3000000119209,
+      "y": 72.0,
+      "z": -669.6999999880791,
+      "yaw": 271.58478,
+      "pitch": 9.2883
+    },
+    "prevEntry": {
+      "prevMaterial": "AIR",
+      "location": {
+        "world": "world",
+        "x": 547.3000000119209,
+        "y": 71.0,
+        "z": -669.6999999880791,
+        "yaw": 271.58478,
+        "pitch": 9.2883
+      },
+      "prevEntry": {
+        "prevMaterial": "AIR",
+        "location": {
+          "world": "world",
+          "x": 546.3000000119209,
+          "y": 70.0,
+          "z": -669.6999999880791,
+          "yaw": 271.58478,
+          "pitch": 9.2883
+        },
+        "prevEntry": {
+          "prevMaterial": "AIR",
+          "location": {
+            "world": "world",
+            "x": 545.3000000119209,
+            "y": 69.0,
+            "z": -669.6999999880791,
+            "yaw": 271.58478,
+            "pitch": 9.2883
+          },
+          "prevEntry": {
+            "prevMaterial": "AIR",
+            "location": {
+              "world": "world",
+              "x": 544.3000000119209,
+              "y": 68.0,
+              "z": -669.6999999880791,
+              "yaw": 271.58478,
+              "pitch": 9.2883
+            },
+            "prevEntry": {
+              "prevMaterial": "AIR",
+              "location": {
+                "world": "world",
+                "x": 543.3000000119209,
+                "y": 67.0,
+                "z": -669.6999999880791,
+                "yaw": 271.58478,
+                "pitch": 9.2883
+              },
+              "prevEntry": {
+                "prevMaterial": "AIR",
+                "location": {
+                  "world": "world",
+                  "x": 542.3000000119209,
+                  "y": 66.0,
+                  "z": -669.6999999880791,
+                  "yaw": 271.58478,
+                  "pitch": 9.2883
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}, 9={
+  "prevMaterial": "AIR",
+  "location": {
+    "world": "world",
+    "x": 550.3000000119209,
+    "y": 73.0,
+    "z": -669.6999999880791,
+    "yaw": 271.58478,
+    "pitch": 9.2883
+  },
+  "prevEntry": {
+    "prevMaterial": "AIR",
+    "location": {
+      "world": "world",
+      "x": 549.3000000119209,
+      "y": 73.0,
+      "z": -669.6999999880791,
+      "yaw": 271.58478,
+      "pitch": 9.2883
+    },
+    "prevEntry": {
+      "prevMaterial": "AIR",
+      "location": {
+        "world": "world",
+        "x": 548.3000000119209,
+        "y": 72.0,
+        "z": -669.6999999880791,
+        "yaw": 271.58478,
+        "pitch": 9.2883
+      },
+      "prevEntry": {
+        "prevMaterial": "AIR",
+        "location": {
+          "world": "world",
+          "x": 547.3000000119209,
+          "y": 71.0,
+          "z": -669.6999999880791,
+          "yaw": 271.58478,
+          "pitch": 9.2883
+        },
+        "prevEntry": {
+          "prevMaterial": "AIR",
+          "location": {
+            "world": "world",
+            "x": 546.3000000119209,
+            "y": 70.0,
+            "z": -669.6999999880791,
+            "yaw": 271.58478,
+            "pitch": 9.2883
+          },
+          "prevEntry": {
+            "prevMaterial": "AIR",
+            "location": {
+              "world": "world",
+              "x": 545.3000000119209,
+              "y": 69.0,
+              "z": -669.6999999880791,
+              "yaw": 271.58478,
+              "pitch": 9.2883
+            },
+            "prevEntry": {
+              "prevMaterial": "AIR",
+              "location": {
+                "world": "world",
+                "x": 544.3000000119209,
+                "y": 68.0,
+                "z": -669.6999999880791,
+                "yaw": 271.58478,
+                "pitch": 9.2883
+              },
+              "prevEntry": {
+                "prevMaterial": "AIR",
+                "location": {
+                  "world": "world",
+                  "x": 543.3000000119209,
+                  "y": 67.0,
+                  "z": -669.6999999880791,
+                  "yaw": 271.58478,
+                  "pitch": 9.2883
+                },
+                "prevEntry": {
+                  "prevMaterial": "AIR",
+                  "location": {
+                    "world": "world",
+                    "x": 542.3000000119209,
+                    "y": 66.0,
+                    "z": -669.6999999880791,
+                    "yaw": 271.58478,
+                    "pitch": 9.2883
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}}
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.get(UnsafeObjectFieldAccessorImpl.java:36)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.reflect.Field.get(Field.java:418)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.writeField(ReflectiveTypeAdapterFactory.java:136)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:241)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.Gson$FutureTypeAdapter.write(Gson.java:976)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.Gson$FutureTypeAdapter.write(Gson.java:976)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.Gson$FutureTypeAdapter.write(Gson.java:976)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.Gson.toJson(Gson.java:669)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.Gson.toJson(Gson.java:648)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.Gson.toJson(Gson.java:603)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//com.google.gson.Gson.toJson(Gson.java:583)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.helpers.Convert.toJson(Convert.java:15)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.models.RailEntry.toString(RailEntry.java:51)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.String.valueOf(String.java:2951)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.StringBuilder.append(StringBuilder.java:168)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.util.AbstractMap.toString(AbstractMap.java:556)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.String.valueOf(String.java:2951)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.invoke.LambdaForm$MH/0x0000000100abf440.invoke(LambdaForm$MH)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.invoke.LambdaForm$MH/0x0000000100adc440.invoke(LambdaForm$MH)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.helpers.Log.d(Log.java:16)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.verifyAndFix(CommandCreateRails.java:145)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.buildRails(CommandCreateRails.java:75)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		com.rosemite.minecarts.commands.CommandCreateRails.onCommand(CommandCreateRails.java:49)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.PluginCommand.execute(PluginCommand.java:45)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:810)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.handleCommand(PlayerConnection.java:2171)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.c(PlayerConnection.java:1986)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:1939)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:50)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:8)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$ensureMainThread$1(PlayerConnectionUtils.java:35)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.PlayerConnectionUtils$$Lambda$4243/0x0000000100e6b040.run(Unknown Source)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(IAsyncTaskHandler.java:136)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(IAsyncTaskHandler.java:109)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:1262)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:1255)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:119)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:1216)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1130)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:289)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.v1_16_R3.MinecraftServer$$Lambda$3163/0x00000001008fc440.run(Unknown Source)
+[13:40:32] [Paper Watchdog Thread/ERROR]: 		java.base@11.0.12/java.lang.Thread.run(Thread.java:834)
+[13:40:32] [Paper Watchdog Thread/ERROR]: ------------------------------
+[13:40:32] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[13:40:32] [Paper Watchdog Thread/ERROR]: ------------------------------
+[13:40:32] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 15147ms or 302 ticks behind
+[13:40:37] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[13:40:37] [Server thread/INFO]: [Log]:Cleared all entries!
+[13:41:08] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:41:08] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:41:08] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:41:08] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:41:08] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:41:08] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[13:41:08] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:41:08] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 115ms)
+[13:41:12] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[13:41:12] [Server thread/INFO]: [Log]:Build Rails!
+[13:41:19] [Server thread/INFO]: [Log]:{6={
+  "prevMaterial": "AIR",
+  "location": {
+    "world": "world",
+    "x": 547.3000000119209,
+    "y": 71.0,
+    "z": -669.6999999880791,
+    "yaw": 274.51337,
+    "pitch": -5.09832
+  },
+  "prevEntry": {
+    "prevMaterial": "AIR",
+    "location": {
+      "world": "world",
+      "x": 546.3000000119209,
+      "y": 70.0,
+      "z": -669.6999999880791,
+      "yaw": 274.51337,
+      "pitch": -5.09832
+    },
+    "prevEntry": {
+      "prevMaterial": "AIR",
+      "location": {
+        "world": "world",
+        "x": 545.3000000119209,
+        "y": 69.0,
+        "z": -669.6999999880791,
+        "yaw": 274.51337,
+        "pitch": -5.09832
+      },
+      "prevEntry": {
+        "prevMaterial": "AIR",
+        "location": {
+          "world": "world",
+          "x": 544.3000000119209,
+          "y": 68.0,
+          "z": -669.6999999880791,
+          "yaw": 274.51337,
+          "pitch": -5.09832
+        },
+        "prevEntry": {
+          "prevMaterial": "AIR",
+          "location": {
+            "world": "world",
+            "x": 543.3000000119209,
+            "y": 67.0,
+            "z": -669.6999999880791,
+            "yaw": 274.51337,
+            "pitch": -5.09832
+          },
+          "prevEntry": {
+            "prevMaterial": "AIR",
+            "location": {
+              "world": "world",
+              "x": 542.3000000119209,
+              "y": 66.0,
+              "z": -669.6999999880791,
+              "yaw": 274.51337,
+              "pitch": -5.09832
+            }
+          }
+        }
+      }
+    }
+  }
+}, 7={
+  "prevMaterial": "AIR",
+  "location": {
+    "world": "world",
+    "x": 548.3000000119209,
+    "y": 72.0,
+    "z": -669.6999999880791,
+    "yaw": 274.51337,
+    "pitch": -5.09832
+  },
+  "prevEntry": {
+    "prevMaterial": "AIR",
+    "location": {
+      "world": "world",
+      "x": 547.3000000119209,
+      "y": 71.0,
+      "z": -669.6999999880791,
+      "yaw": 274.51337,
+      "pitch": -5.09832
+    },
+    "prevEntry": {
+      "prevMaterial": "AIR",
+      "location": {
+        "world": "world",
+        "x": 546.3000000119209,
+        "y": 70.0,
+        "z": -669.6999999880791,
+        "yaw": 274.51337,
+        "pitch": -5.09832
+      },
+      "prevEntry": {
+        "prevMaterial": "AIR",
+        "location": {
+          "world": "world",
+          "x": 545.3000000119209,
+          "y": 69.0,
+          "z": -669.6999999880791,
+          "yaw": 274.51337,
+          "pitch": -5.09832
+        },
+        "prevEntry": {
+          "prevMaterial": "AIR",
+          "location": {
+            "world": "world",
+            "x": 544.3000000119209,
+            "y": 68.0,
+            "z": -669.6999999880791,
+            "yaw": 274.51337,
+            "pitch": -5.09832
+          },
+          "prevEntry": {
+            "prevMaterial": "AIR",
+            "location": {
+              "world": "world",
+              "x": 543.3000000119209,
+              "y": 67.0,
+              "z": -669.6999999880791,
+              "yaw": 274.51337,
+              "pitch": -5.09832
+            },
+            "prevEntry": {
+              "prevMaterial": "AIR",
+              "location": {
+                "world": "world",
+                "x": 542.3000000119209,
+                "y": 66.0,
+                "z": -669.6999999880791,
+                "yaw": 274.51337,
+                "pitch": -5.09832
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}, 8={
+  "prevMaterial": "AIR",
+  "location": {
+    "world": "world",
+    "x": 549.3000000119209,
+    "y": 73.0,
+    "z": -669.6999999880791,
+    "yaw": 274.51337,
+    "pitch": -5.09832
+  },
+  "prevEntry": {
+    "prevMaterial": "AIR",
+    "location": {
+      "world": "world",
+      "x": 548.3000000119209,
+      "y": 72.0,
+      "z": -669.6999999880791,
+      "yaw": 274.51337,
+      "pitch": -5.09832
+    },
+    "prevEntry": {
+      "prevMaterial": "AIR",
+      "location": {
+        "world": "world",
+        "x": 547.3000000119209,
+        "y": 71.0,
+        "z": -669.6999999880791,
+        "yaw": 274.51337,
+        "pitch": -5.09832
+      },
+      "prevEntry": {
+        "prevMaterial": "AIR",
+        "location": {
+          "world": "world",
+          "x": 546.3000000119209,
+          "y": 70.0,
+          "z": -669.6999999880791,
+          "yaw": 274.51337,
+          "pitch": -5.09832
+        },
+        "prevEntry": {
+          "prevMaterial": "AIR",
+          "location": {
+            "world": "world",
+            "x": 545.3000000119209,
+            "y": 69.0,
+            "z": -669.6999999880791,
+            "yaw": 274.51337,
+            "pitch": -5.09832
+          },
+          "prevEntry": {
+            "prevMaterial": "AIR",
+            "location": {
+              "world": "world",
+              "x": 544.3000000119209,
+              "y": 68.0,
+              "z": -669.6999999880791,
+              "yaw": 274.51337,
+              "pitch": -5.09832
+            },
+            "prevEntry": {
+              "prevMaterial": "AIR",
+              "location": {
+                "world": "world",
+                "x": 543.3000000119209,
+                "y": 67.0,
+                "z": -669.6999999880791,
+                "yaw": 274.51337,
+                "pitch": -5.09832
+              },
+              "prevEntry": {
+                "prevMaterial": "AIR",
+                "location": {
+                  "world": "world",
+                  "x": 542.3000000119209,
+                  "y": 66.0,
+                  "z": -669.6999999880791,
+                  "yaw": 274.51337,
+                  "pitch": -5.09832
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}}
+[13:41:19] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6498ms or 129 ticks behind
+[13:41:21] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[13:41:21] [Server thread/INFO]: [Log]:Cleared all entries!
+[13:57:35] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:57:35] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:57:35] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:57:35] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:57:35] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:57:35] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[13:57:35] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:57:35] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 118ms)
+[13:57:44] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[13:57:44] [Server thread/INFO]: [Log]:Build Rails!
+[13:58:16] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[13:58:16] [Server thread/INFO]: [Log]:Cleared all entries!
+[13:58:33] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:58:33] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:58:33] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:58:33] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:58:33] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:58:33] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[13:58:33] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:58:33] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 102ms)
+[13:58:34] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[13:58:34] [Server thread/INFO]: [Log]:Build Rails!
+[13:58:44] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[13:58:44] [Server thread/INFO]: [Log]:Cleared all entries!
+[13:58:54] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:58:54] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:58:54] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:58:54] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:58:54] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:58:54] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[13:58:54] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:58:54] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 101ms)
+[13:58:55] [Server thread/INFO]: JesseFaithful issued server command: /rails b
+[13:58:55] [Server thread/INFO]: [Log]:Build Rails!
+[13:59:01] [Server thread/INFO]: JesseFaithful issued server command: /rails c
+[13:59:01] [Server thread/INFO]: [Log]:Cleared all entries!
+[13:59:12] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:59:12] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:59:12] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:59:12] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[13:59:12] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[13:59:12] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
+[13:59:12] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[13:59:12] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 97ms)
+[14:01:31] [Server thread/INFO]: Stopping the server
+[14:01:31] [Server thread/INFO]: Stopping server
+[14:01:31] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[14:01:31] [Server thread/INFO]: [AutoPluginLoader] Disabling AutoPluginLoader v1.2.6
+[14:01:31] [Server thread/INFO]: Saving players
+[14:01:31] [Server thread/INFO]: JesseFaithful lost connection: Server closed
+[14:01:31] [Server thread/INFO]: JesseFaithful left the game
+[14:01:31] [Server thread/INFO]: Saving worlds
+[14:01:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[14:01:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[14:01:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[14:01:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:01:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[14:01:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:01:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[14:01:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:01:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:01:32] [Server thread/INFO]: Flushing Chunk IO
+[14:01:32] [Server thread/INFO]: Closing Thread Pool
+[14:01:32] [Server thread/INFO]: Closing Server

@@ -12,12 +12,13 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
 
-import java.util.LinkedList;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class CommandCreateRails implements CommandExecutor {
     private final LinkedList<RailEntry> entries;
-//    private final Material currentMaterial = Material.REDSTONE_BLOCK;
     private final Material currentMaterial = Material.POLISHED_BASALT;
+    private final boolean fullTest = true;
 
     public CommandCreateRails() {
         entries = new LinkedList<>();
@@ -44,7 +45,7 @@ public class CommandCreateRails implements CommandExecutor {
 
             if (req.startsWith("b")) {
                 notify("Build Rails!", p);
-                buildRails(p, 20);
+                buildRails(p, 100);
                 return true;
             }
 
@@ -70,8 +71,12 @@ public class CommandCreateRails implements CommandExecutor {
             prevLocation = railEntry.location.clone();
         }
 
-        testBuild();
-//        buildRoute();
+//        verifyAndFix();
+
+        if (fullTest)
+            buildRoute();
+        else
+            testBuild();
     }
 
     private RailEntry calculateRailPath(Location startingLocation, RailEntry prevEntry) {
@@ -84,6 +89,15 @@ public class CommandCreateRails implements CommandExecutor {
         Location nextLocation = Common.getNextLocation(startingLocation, direction[0], direction[1]);
 
         if (nextLocation.getBlock().isEmpty()) {
+            // Check if we can go one down
+            Location l = nextLocation.clone().add(0, -1, 0);
+
+//            if (l.getBlock().isEmpty() && l.add(0, -1, 0).getBlock().isEmpty() && Common.getNextLocation(l, direction[0] * -1, direction[1] * -1).getBlock().isEmpty()) {
+
+            if (l.getBlock().isEmpty() && l.add(0, -1, 0).getBlock().isEmpty()) {
+                return new RailEntry(nextLocation.add(0, -1, 0), nextLocation.getBlock().getType(), prevEntry);
+            }
+
             return new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
         }
 
@@ -97,38 +111,46 @@ public class CommandCreateRails implements CommandExecutor {
         }
 
         return new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
-//        Location nextLocation = Common.getNextLocation(startingLocation, direction[0], direction[1]);
-//        Material materialInFrontFirst = nextLocation.getBlock().getType();
-//        Material materialInFront = Common.getNextLocation(nextLocation, direction[0], direction[1]).getBlock().getType();
-//
-//        if ((!materialInFront.isAir() || !materialInFrontFirst.isAir()) && materialInFront != currentMaterial) {
-//            nextLocation.add(0, 1, 0);
-//            if (nextLocation.getBlock().isEmpty())
-//                entry = new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
-//            else
-//            {
-////                entry = new RailEntry(nextLocation.add(0, 1, 0), nextLocation.getBlock().getType(), prevEntry);
-//                entry = new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
-//                entry.moveOneUp(direction);
-//            }
-//        } else {
-//            // Check if we can go one down
-//            Location l = nextLocation.clone().add(0, -1, 0);
-//            if (l.getBlock().isEmpty() && l.add(0, -1, 0).getBlock().isEmpty() && Common.getNextLocation(l, direction[0] * -1, direction[1] * -1).getBlock().isEmpty()) {
-//                entry = new RailEntry(nextLocation.add(0, -1, 0), nextLocation.getBlock().getType(), prevEntry);
-//            } else {
-//                entry = new RailEntry(nextLocation, nextLocation.clone().getBlock().getType(), prevEntry);
-//            }
-//        }
-//
-//        return entry;
+    }
+
+    private void verifyAndFix() {
+        LinkedHashMap<Integer, RailEntry> queue = new LinkedHashMap<>() {
+            @Override
+            protected boolean removeEldestEntry(Map.Entry<Integer, RailEntry> eldest) {
+                return this.size() > 3;
+            }
+        };
+
+        RailEntry e1;
+        RailEntry e2;
+        RailEntry e3;
+        for (int i = 0; i < entries.size(); i++) {
+            RailEntry entry = entries.get(i);
+            queue.put(i, entry);
+
+            if (queue.size() != 3) {
+                continue;
+            }
+
+            e1 = queue.get(i-2);
+            e2 = queue.get(i-1);
+            e3 = queue.get(i);
+
+            if (e1.location.getBlockY() == e3.location.getBlockY() && e2.location.getBlockY() > e1.location.getBlockY()) {
+                e2.location.add(0, 1, 0);
+            }
+        }
     }
 
     private void clearPlacedBlocks(Location l) {
         //noinspection ConstantConditions
         entries.forEach(entry -> l.getWorld().getBlockAt(entry.location.getBlockX(), entry.location.getBlockY(), entry.location.getBlockZ()).setType(entry.prevMaterial));
-        //noinspection ConstantConditions
-        entries.forEach(entry -> l.getWorld().getBlockAt(entry.location.getBlockX(), entry.location.getBlockY() + 1, entry.location.getBlockZ()).setType(Material.AIR));
+
+        if (fullTest)
+        {
+            //noinspection ConstantConditions
+            entries.forEach(entry -> l.getWorld().getBlockAt(entry.location.getBlockX(), entry.location.getBlockY() + 1, entry.location.getBlockZ()).setType(Material.AIR));
+        }
     }
 
     private void buildRoute() {
@@ -141,7 +163,6 @@ public class CommandCreateRails implements CommandExecutor {
     private int getNextEmptyLocationHeight(Location startingLocation) {
         Location l = startingLocation.clone();
 
-        int difference;
         while (!l.getBlock().isEmpty()) {
             l.add(0, 1, 0);
         }
