@@ -12,24 +12,20 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
 
-import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.Map;
 
 public class CommandCreateRails implements CommandExecutor {
     private final LinkedList<RailEntry> entries;
     private final Material currentMaterial = Material.POLISHED_BASALT;
     private final boolean fullTest = true;
     @SuppressWarnings("FieldCanBeLocal")
-    private final int distance = 201 * 4;
-//    private final int distance = 201 * 2;
-//    private final int distance = 201;
-//    private final int distance = 120 - 3;
-//    private final int distance = 60;
-    private final Location loc;
+    private final int distance = 10000;
+    public Location loc;
 
-    public CommandCreateRails(Location location) {
+    public CommandCreateRails() {
         entries = new LinkedList<>();
-        loc = location;
     }
 
     @Override
@@ -40,13 +36,15 @@ public class CommandCreateRails implements CommandExecutor {
 
         Player p = (Player) sender;
 
+        loc = p.getLocation().clone();
+
         if (args.length > 0)
         {
             String req = args[0].toLowerCase();
 
             if (req.startsWith("c")) {
                 notify("Cleared all entries!", p);
-                clearPlacedBlocks(p.getLocation());
+                clearPlacedBlocks();
                 entries.clear();
                 return true;
             }
@@ -132,19 +130,6 @@ public class CommandCreateRails implements CommandExecutor {
             }
         }
 
-//        Log.d("----------------------");
-//        Log.d(verifyHeight(direction));
-//        Log.d("----------------------");
-//        Log.d("----------------------");
-//        Log.d(verifyHeight(direction));
-//        Log.d("----------------------");
-//        Log.d("----------------------");
-//        Log.d(verifyHeight(direction));
-//        Log.d("----------------------");
-//        Log.d("----------------------");
-//        Log.d(verifyHeight(direction));
-//        Log.d("----------------------");
-
         verifyAndFixInvalidTrackPattern();
     }
 
@@ -196,15 +181,15 @@ public class CommandCreateRails implements CommandExecutor {
         }
     }
 
-    public void clearPlacedBlocks(Location l) {
+    public void clearPlacedBlocks() {
         if (fullTest)
         {
             //noinspection ConstantConditions
-            entries.forEach(entry -> l.getWorld().getBlockAt(entry.location.getBlockX(), entry.location.getBlockY() + 1, entry.location.getBlockZ()).setType(Material.AIR));
+            entries.forEach(entry -> loc.getWorld().getBlockAt(entry.location.getBlockX(), entry.location.getBlockY() + 1, entry.location.getBlockZ()).setType(Material.AIR));
         }
 
         //noinspection ConstantConditions
-        entries.forEach(entry -> l.getWorld().getBlockAt(entry.location.getBlockX(), entry.location.getBlockY(), entry.location.getBlockZ()).setType(entry.prevMaterial));
+        entries.forEach(entry -> loc.getWorld().getBlockAt(entry.location.getBlockX(), entry.location.getBlockY(), entry.location.getBlockZ()).setType(entry.prevMaterial));
     }
 
     private void buildRoute() {

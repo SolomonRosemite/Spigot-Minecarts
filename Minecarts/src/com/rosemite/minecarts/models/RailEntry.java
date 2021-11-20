@@ -48,38 +48,6 @@ public class RailEntry {
         location.add(0, 1, 0);
     }
 
-//    public RailEntry moveUp(Location location, int[] direction) {
-//        location.add(0, --heightDifference, 0);
-//
-//        if (heightDifference > 0) {
-//            if (prevEntry != null) {
-//                return prevEntry.moveUp(heightDifference, direction);
-//            }
-//
-//            Location newLocation = location.clone().add(0, -1, 0);
-//            newLocation = Common.getNextLocationReverse(newLocation, direction[0], direction[1]);
-//            return new RailEntry(newLocation, newLocation.getBlock().getType(), null);
-//        }
-//
-//        return null;
-//    }
-
-//    public RailEntry moveUp(int heightDifference, int[] direction) {
-//        location.add(0, --heightDifference, 0);
-//
-//        if (heightDifference > 0) {
-//            if (prevEntry != null) {
-//                return prevEntry.moveUp(heightDifference, direction);
-//            }
-//
-//            Location newLocation = location.clone().add(0, -1, 0);
-//            newLocation = Common.getNextLocationReverse(newLocation, direction[0], direction[1]);
-//            return new RailEntry(newLocation, newLocation.getBlock().getType(), null);
-//        }
-//
-//        return null;
-//    }
-
     public String toString() {
         return Convert.toJson(this);
     }
