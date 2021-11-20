@@ -1,112 +1,62 @@
-[17:41:56] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[17:41:56] [main/INFO]: Found new data pack file/bukkit, loading it automatically
-[17:41:56] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[17:41:57] [Worker-Main-5/INFO]: Loaded 7 recipes
-[17:41:58] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[17:41:58] [Server thread/INFO]: Loading properties
-[17:41:58] [Server thread/INFO]: This server is running Paper version git-Paper-629 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[17:41:58] [Server thread/INFO]: Debug logging is disabled
-[17:41:58] [Server thread/INFO]: Using 4 threads for Netty based IO
-[17:41:58] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[17:41:58] [Server thread/INFO]: Default game type: SURVIVAL
-[17:41:58] [Server thread/INFO]: Generating keypair
-[17:41:58] [Server thread/INFO]: Starting Minecraft server on *:25565
-[17:41:58] [Server thread/INFO]: Using default channel type
-[17:41:59] [Server thread/INFO]: [Minecarts] Loading Minecarts v1.0
-[17:41:59] [Server thread/INFO]: [AutoPluginLoader] Loading AutoPluginLoader v1.2.6
-[17:41:59] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[17:41:59] [Server thread/INFO]: Preparing level "world"
-[17:42:02] [Server thread/WARN]: Unable to find spawn biome
-[17:42:03] [Server thread/WARN]: Unable to find spawn biome
-[17:42:03] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[17:42:03] [Server thread/INFO]: Loaded 0 spawn chunks for world world
-[17:42:03] [Worker-Main-7/INFO]: Preparing spawn area: 0%
-[17:42:03] [Server thread/INFO]: Time elapsed: 304 ms
-[17:42:03] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[17:42:04] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
-[17:42:04] [Worker-Main-8/INFO]: Preparing spawn area: 0%
-[17:42:04] [Server thread/INFO]: Time elapsed: 488 ms
-[17:42:04] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[17:42:04] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
-[17:42:04] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[17:42:04] [Worker-Main-8/INFO]: Preparing spawn area: 0%
-[17:42:04] [Server thread/INFO]: Time elapsed: 596 ms
-[17:42:04] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[17:42:04] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[17:42:04] [Server thread/INFO]: [AutoPluginLoader] Enabling AutoPluginLoader v1.2.6
-[17:42:04] [Server thread/INFO]: [AutoPluginLoader] Plugin has successfully loaded. (Took 23ms)
-[17:42:04] [Server thread/INFO]: Running delayed init tasks
-[17:42:04] [Server thread/INFO]: Done (6.363s)! For help, type "help"
-[17:42:04] [Server thread/INFO]: Timings Reset
-[17:42:17] [User Authenticator #1/INFO]: UUID of player JesseFaithful is 1eb861b6-bc3c-49be-ad02-b336095e1daf
-[17:42:17] [Server thread/INFO]: JesseFaithful joined the game
-[17:42:17] [Server thread/INFO]: JesseFaithful[/127.0.0.1:64120] logged in with entity id 368 at ([world]-84.5, 91.0, -263.5)
-[17:42:25] [Server thread/INFO]: JesseFaithful issued server command: /gamemode creative
-[17:42:25] [Server thread/INFO]: [JesseFaithful: Set own game mode to Creative Mode]
-[17:44:17] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[17:44:17] [Server thread/ERROR]: Error occurred while disabling Minecarts v1.0 (Is it up to date?)
-java.lang.NoClassDefFoundError: com/rosemite/minecarts/models/RailEntry
-	at com.rosemite.minecarts.commands.CommandCreateRails.clearPlacedBlocks(CommandCreateRails.java:188) ~[?:?]
-	at com.rosemite.minecarts.main.Minecarts.onDisable(Minecarts.java:27) ~[?:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:265) ~[patched_1.16.5.jar:git-Paper-629]
-	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:415) ~[patched_1.16.5.jar:git-Paper-629]
-	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:516) ~[patched_1.16.5.jar:git-Paper-629]
-	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:508) ~[patched_1.16.5.jar:git-Paper-629]
-	at me.PCPSells.aplapis.PluginAPI.disablePlugin(PluginAPI.java:83) ~[?:?]
-	at me.PCPSells.aplapis.PluginAPI.unloadPlugin(PluginAPI.java:156) ~[?:?]
-	at me.PCPSells.APLMain.checkPlugins(APLMain.java:128) ~[?:?]
-	at me.PCPSells.APLMain$2.run(APLMain.java:43) ~[?:?]
-	at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftTask.run(CraftTask.java:100) ~[patched_1.16.5.jar:git-Paper-629]
-	at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468) ~[patched_1.16.5.jar:git-Paper-629]
-	at net.minecraft.server.v1_16_R3.MinecraftServer.b(MinecraftServer.java:1423) ~[patched_1.16.5.jar:git-Paper-629]
-	at net.minecraft.server.v1_16_R3.DedicatedServer.b(DedicatedServer.java:419) ~[patched_1.16.5.jar:git-Paper-629]
-	at net.minecraft.server.v1_16_R3.MinecraftServer.a(MinecraftServer.java:1338) ~[patched_1.16.5.jar:git-Paper-629]
-	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1126) ~[patched_1.16.5.jar:git-Paper-629]
-	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:289) ~[patched_1.16.5.jar:git-Paper-629]
-	at java.lang.Thread.run(Thread.java:834) [?:?]
-Caused by: java.lang.ClassNotFoundException: com.rosemite.minecarts.models.RailEntry
-	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:152) ~[patched_1.16.5.jar:git-Paper-629]
-	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:111) ~[patched_1.16.5.jar:git-Paper-629]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:588) ~[?:?]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
-	... 18 more
-Caused by: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
-	at java.util.zip.ZipFile$ZipFileInputStream.initDataOffset(ZipFile.java:1001) ~[?:?]
-	at java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:1011) ~[?:?]
-	at java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(ZipFile.java:469) ~[?:?]
-	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:159) ~[?:?]
-	at java.io.FilterInputStream.read(FilterInputStream.java:107) ~[?:?]
-	at com.google.common.io.ByteStreams.copy(ByteStreams.java:106) ~[patched_1.16.5.jar:git-Paper-629]
-	at com.google.common.io.ByteStreams.toByteArray(ByteStreams.java:166) ~[patched_1.16.5.jar:git-Paper-629]
-	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:150) ~[patched_1.16.5.jar:git-Paper-629]
-	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:111) ~[patched_1.16.5.jar:git-Paper-629]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:588) ~[?:?]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
-	... 18 more
-[17:44:18] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[17:44:18] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[17:44:18] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[17:44:18] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
-[17:44:18] [Server thread/WARN]: Enabled plugin with unregistered PluginClassLoader Minecarts v1.0
-[17:44:18] [Server thread/INFO]: [Log]:Started Minecarts plugin!
-[17:44:18] [Server thread/INFO]: [AutoPluginLoader] Minecarts has been automatically reloaded! (Took 199ms)
-[17:45:03] [Server thread/INFO]: Stopping the server
-[17:45:03] [Server thread/INFO]: Stopping server
-[17:45:03] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
-[17:45:03] [Server thread/INFO]: [AutoPluginLoader] Disabling AutoPluginLoader v1.2.6
-[17:45:03] [Server thread/INFO]: Saving players
-[17:45:03] [Server thread/INFO]: JesseFaithful lost connection: Server closed
-[17:45:03] [Server thread/INFO]: JesseFaithful left the game
-[17:45:03] [Server thread/INFO]: Saving worlds
-[17:45:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[17:45:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[17:45:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[17:45:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[17:45:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[17:45:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[17:45:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[17:45:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[17:45:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[17:45:07] [Server thread/INFO]: Flushing Chunk IO
-[17:45:07] [Server thread/INFO]: Closing Thread Pool
-[17:45:07] [Server thread/INFO]: Closing Server
+[17:48:23] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[17:48:23] [main/INFO]: Found new data pack file/bukkit, loading it automatically
+[17:48:23] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[17:48:23] [Worker-Main-5/INFO]: Loaded 7 recipes
+[17:48:24] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[17:48:24] [Server thread/INFO]: Loading properties
+[17:48:24] [Server thread/INFO]: This server is running Paper version git-Paper-629 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[17:48:24] [Server thread/INFO]: Debug logging is disabled
+[17:48:24] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:48:24] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:48:24] [Server thread/INFO]: Default game type: SURVIVAL
+[17:48:24] [Server thread/INFO]: Generating keypair
+[17:48:25] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:48:25] [Server thread/INFO]: Using default channel type
+[17:48:25] [Server thread/INFO]: [Minecarts] Loading Minecarts v1.0
+[17:48:25] [Server thread/INFO]: [AutoPluginLoader] Loading AutoPluginLoader v1.2.6
+[17:48:25] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:48:25] [Server thread/INFO]: Preparing level "world"
+[17:48:26] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[17:48:26] [Server thread/INFO]: Preparing spawn area: 0%
+[17:48:26] [Server thread/INFO]: Loaded 0 spawn chunks for world world
+[17:48:26] [Server thread/INFO]: Preparing spawn area: 5%
+[17:48:26] [Server thread/INFO]: Time elapsed: 690 ms
+[17:48:26] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[17:48:27] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
+[17:48:27] [Server thread/INFO]: Preparing spawn area: 0%
+[17:48:27] [Server thread/INFO]: Time elapsed: 159 ms
+[17:48:27] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[17:48:27] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
+[17:48:27] [Server thread/INFO]: Time elapsed: 116 ms
+[17:48:27] [Server thread/INFO]: [Minecarts] Enabling Minecarts v1.0
+[17:48:27] [Server thread/INFO]: [Log]:Started Minecarts plugin!
+[17:48:27] [Server thread/INFO]: [AutoPluginLoader] Enabling AutoPluginLoader v1.2.6
+[17:48:27] [Server thread/INFO]: [AutoPluginLoader] Plugin has successfully loaded. (Took 28ms)
+[17:48:27] [Server thread/INFO]: Running delayed init tasks
+[17:48:27] [Server thread/INFO]: Done (2.561s)! For help, type "help"
+[17:48:27] [Server thread/INFO]: Timings Reset
+[17:48:30] [User Authenticator #1/INFO]: UUID of player JesseFaithful is 1eb861b6-bc3c-49be-ad02-b336095e1daf
+[17:48:30] [Server thread/INFO]: JesseFaithful joined the game
+[17:48:30] [Server thread/INFO]: JesseFaithful[/127.0.0.1:64220] logged in with entity id 351 at ([world]242.5, 78.0, 55.5)
+[17:48:40] [Server thread/INFO]: JesseFaithful issued server command: /gamemode creative
+[17:48:40] [Server thread/INFO]: [JesseFaithful: Set own game mode to Creative Mode]
+[17:49:24] [Server thread/INFO]: Stopping the server
+[17:49:24] [Server thread/INFO]: Stopping server
+[17:49:24] [Server thread/INFO]: [AutoPluginLoader] Disabling AutoPluginLoader v1.2.6
+[17:49:24] [Server thread/INFO]: [Minecarts] Disabling Minecarts v1.0
+[17:49:24] [Server thread/INFO]: Saving players
+[17:49:24] [Server thread/INFO]: JesseFaithful lost connection: Server closed
+[17:49:24] [Server thread/INFO]: JesseFaithful left the game
+[17:49:24] [Server thread/INFO]: Saving worlds
+[17:49:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[17:49:25] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:49:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[17:49:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:49:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[17:49:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:49:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:49:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:49:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:49:26] [Server thread/INFO]: Flushing Chunk IO
+[17:49:26] [Server thread/INFO]: Closing Thread Pool
+[17:49:26] [Server thread/INFO]: Closing Server
