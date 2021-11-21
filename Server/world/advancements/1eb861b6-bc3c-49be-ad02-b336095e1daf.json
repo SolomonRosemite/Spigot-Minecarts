@@ -143,6 +143,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/black_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2021-11-21 12:29:16 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/wooden_shovel": {
     "criteria": {
       "has_stick": "2021-11-20 18:01:20 +0100"
@@ -182,6 +188,12 @@
   "minecraft:recipes/combat/wooden_sword": {
     "criteria": {
       "has_stick": "2021-11-20 18:01:20 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_logs": "2021-11-21 13:48:17 +0100"
     },
     "done": true
   },
@@ -257,6 +269,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/yellow_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2021-11-21 12:29:16 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/stripped_crimson_hyphae": {
     "criteria": {
       "has_log": "2021-11-20 11:35:38 +0100"
@@ -329,6 +347,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/light_blue_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2021-11-21 12:29:16 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/leather_chestplate": {
     "criteria": {
       "has_leather": "2021-11-19 20:51:30 +0100"
@@ -347,9 +371,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/magenta_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2021-11-21 12:29:16 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/diorite_wall_from_diorite_stonecutting": {
     "criteria": {
       "has_diorite": "2021-11-20 16:02:59 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/orange_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2021-11-21 12:29:16 +0100"
     },
     "done": true
   },
@@ -390,10 +426,12 @@
       "minecraft:forest": "2021-11-19 17:51:56 +0100",
       "minecraft:mountains": "2021-11-19 23:49:08 +0100",
       "minecraft:taiga": "2021-11-19 17:52:35 +0100",
+      "minecraft:desert_hills": "2021-11-21 12:28:53 +0100",
       "minecraft:giant_tree_taiga": "2021-11-20 18:08:07 +0100",
       "minecraft:deep_cold_ocean": "2021-11-20 18:03:28 +0100",
       "minecraft:snowy_tundra": "2021-11-20 18:08:39 +0100",
       "minecraft:taiga_hills": "2021-11-20 18:11:37 +0100",
+      "minecraft:desert": "2021-11-21 12:28:51 +0100",
       "minecraft:frozen_river": "2021-11-20 18:08:46 +0100",
       "minecraft:birch_forest": "2021-11-20 17:48:31 +0100",
       "minecraft:beach": "2021-11-19 17:51:41 +0100",
@@ -420,6 +458,18 @@
   "minecraft:recipes/misc/charcoal": {
     "criteria": {
       "has_log": "2021-11-19 23:15:03 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/purple_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2021-11-21 12:29:16 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/sleep_in_bed": {
+    "criteria": {
+      "slept_in_bed": "2021-11-21 13:44:28 +0100"
     },
     "done": true
   },
@@ -477,6 +527,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/cyan_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2021-11-21 12:29:16 +0100"
+    },
+    "done": true
+  },
   "minecraft:adventure/root": {
     "criteria": {
       "killed_something": "2021-11-19 20:51:30 +0100"
@@ -513,6 +569,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/gray_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2021-11-21 12:29:16 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/orange_dye_from_orange_tulip": {
     "criteria": {
       "has_red_flower": "2021-11-19 21:39:24 +0100"
@@ -537,6 +599,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/lime_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2021-11-21 12:29:16 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/stone_hoe": {
     "criteria": {
       "has_cobblestone": "2021-11-19 23:25:40 +0100"
@@ -555,6 +623,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/brown_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2021-11-21 12:29:16 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/green_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2021-11-21 12:29:16 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/birch_wood": {
     "criteria": {
       "has_log": "2021-11-19 23:15:03 +0100"
@@ -564,6 +644,12 @@
   "minecraft:recipes/transportation/tnt_minecart": {
     "criteria": {
       "has_minecart": "2021-11-19 23:48:02 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/pink_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2021-11-21 12:29:16 +0100"
     },
     "done": true
   },
@@ -599,6 +685,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/red_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2021-11-21 12:29:16 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/oak_boat": {
     "criteria": {
       "in_water": "2021-11-19 20:58:11 +0100"
@@ -623,6 +715,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/blue_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2021-11-21 12:29:16 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/orange_concrete_powder": {
     "criteria": {
       "has_gravel": "2021-11-20 17:12:16 +0100"
@@ -632,6 +730,12 @@
   "minecraft:recipes/building_blocks/cyan_concrete_powder": {
     "criteria": {
       "has_gravel": "2021-11-20 17:12:16 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_gray_bed_from_white_bed": {
+    "criteria": {
+      "has_bed": "2021-11-21 12:29:16 +0100"
     },
     "done": true
   },

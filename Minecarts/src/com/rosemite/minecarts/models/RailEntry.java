@@ -41,7 +41,9 @@ public class RailEntry {
     }
 
     public void moveUpChildByOne() {
-        prevEntry.moveUpByOne();
+        if (prevEntry != null) {
+            prevEntry.moveUpByOne();
+        }
     }
 
     private void moveUpByOne() {

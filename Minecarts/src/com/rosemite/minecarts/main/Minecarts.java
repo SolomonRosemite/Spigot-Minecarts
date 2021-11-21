@@ -14,7 +14,7 @@ public class Minecarts extends JavaPlugin {
         Log.setConsoleSender(getServer().getConsoleSender());
         Log.d("Started Minecarts plugin!");
 
-        commandCreateRails = new CommandCreateRails();
+        commandCreateRails = new CommandCreateRails(this);
 
         //noinspection ConstantConditions
         getCommand("rails").setExecutor(commandCreateRails);

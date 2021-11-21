@@ -3,29 +3,41 @@ package com.rosemite.minecarts.commands;
 import com.rosemite.minecarts.helpers.Common;
 import com.rosemite.minecarts.helpers.Convert;
 import com.rosemite.minecarts.helpers.Log;
+import com.rosemite.minecarts.main.Minecarts;
 import com.rosemite.minecarts.models.RailEntry;
+import net.md_5.bungee.api.ChatMessageType;
+import net.md_5.bungee.api.chat.TextComponent;
+import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.Map;
 
+import static org.bukkit.Bukkit.getScheduler;
+
 public class CommandCreateRails implements CommandExecutor {
     private final LinkedList<RailEntry> entries;
+    private final LinkedList<RailEntry> otherEntries;
+
     private final Material currentMaterial = Material.POLISHED_BASALT;
     private final boolean fullTest = true;
     @SuppressWarnings("FieldCanBeLocal")
-    private final int distance = 10000;
+    private final int distance = 1000 * 10;
     public Location loc;
+    Minecarts plugin;
 
-    public CommandCreateRails() {
+    public CommandCreateRails(Minecarts plugin) {
         entries = new LinkedList<>();
+        otherEntries = new LinkedList<>();
+        this.plugin = plugin;
     }
 
     @Override
@@ -51,7 +63,7 @@ public class CommandCreateRails implements CommandExecutor {
 
             if (req.startsWith("b")) {
                 notify("Build Rails!", p);
-                buildRails(loc, distance);
+                buildRails(p, loc, distance);
                 return true;
             }
 
@@ -66,30 +78,57 @@ public class CommandCreateRails implements CommandExecutor {
         return true;
     }
 
-    private void buildRails(Location location, int distance) {
-        Location l = location.clone();
-        Location prevLocation = new Location(l.getWorld(), l.getBlockX(), l.getBlockY(), l.getBlockZ(), l.getYaw(), l.getPitch());
+    private void buildRails(Player p, Location location, int distance) {
+        getScheduler().runTaskAsynchronously(plugin, () -> {
+            long startTime = System.currentTimeMillis();
 
-        Vector vec = l.getDirection();
-        double xAbs = Math.abs(vec.getX());
-        double zAbs = Math.abs(vec.getZ());
+            Location l = location.clone();
+            Location prevLocation = new Location(l.getWorld(), l.getBlockX(), l.getBlockY(), l.getBlockZ(), l.getYaw(), l.getPitch());
 
-        int[] direction = getDirection(vec, xAbs, zAbs);
+            Vector vec = l.getDirection();
+            double xAbs = Math.abs(vec.getX());
+            double zAbs = Math.abs(vec.getZ());
 
-        for (int i = 0; i < distance; i++) {
-            RailEntry prevEntry = i != 0 ? entries.getLast() : null;
-            RailEntry railEntry = calculateRailPath(prevLocation, direction, prevEntry);
-            entries.add(railEntry);
+            int[] direction = getDirection(vec, xAbs, zAbs);
 
-            prevLocation = railEntry.location.clone();
-        }
+            for (int i = 0; i < distance; i++) {
+                RailEntry prevEntry = i != 0 ? entries.getLast() : null;
+                RailEntry railEntry = calculateRailPath(prevLocation, direction, prevEntry);
+                entries.add(railEntry);
 
-        verifyAndFix(direction);
+                prevLocation = railEntry.location.clone();
 
-        if (fullTest)
-            buildRoute();
-        else
-            testBuild();
+                sendActionBar(p, i / (double)distance, "calculating track");
+            }
+
+            finalizeTrack(p);
+
+            long stopTime = System.currentTimeMillis();
+            long elapsedTime = stopTime - startTime;
+            notify("Calculating track took: " + elapsedTime + " ms", p);
+        });
+    }
+
+    private void finalizeTrack(Player p) {
+        long startTime = System.currentTimeMillis();
+        new BukkitRunnable() {
+            public void run() {
+                sendActionBar(p, -1, "Verifying track");
+
+                int invalidCount = verifyAndFix();
+                Log.d("Count: " + invalidCount);
+
+                sendActionBar(p, -1, "Building track");
+//                if (fullTest)
+//                    buildRoute();
+//                else
+//                    testBuild();
+                sendActionBar(p, -1, "Completed track!");
+            }
+        }.runTask(plugin);
+        long stopTime = System.currentTimeMillis();
+        long elapsedTime = stopTime - startTime;
+        Log.d("Time: " +elapsedTime);
     }
 
     private RailEntry calculateRailPath(Location startingLocation, int[] direction, RailEntry prevEntry) {
@@ -98,8 +137,6 @@ public class CommandCreateRails implements CommandExecutor {
         if (nextLocation.getBlock().isEmpty()) {
             // Check if we can go one down
             Location l = nextLocation.clone().add(0, -1, 0);
-
-//            if (l.getBlock().isEmpty() && l.add(0, -1, 0).getBlock().isEmpty() && Common.getNextLocation(l, direction[0] * -1, direction[1] * -1).getBlock().isEmpty()) {
             if (l.getBlock().isEmpty() && l.add(0, -1, 0).getBlock().isEmpty()) {
                 return new RailEntry(nextLocation.add(0, -1, 0), nextLocation.getBlock().getType(), prevEntry);
             }
@@ -122,18 +159,20 @@ public class CommandCreateRails implements CommandExecutor {
         return new RailEntry(nextLocation, nextLocation.getBlock().getType(), prevEntry);
     }
 
-    private void verifyAndFix(int[] direction) {
+    private int verifyAndFix() {
+        int invalidCount = 0;
+
         // Repeat until height verification succeeds
-        while (true) {
-            if (verifyHeight(direction)) {
-                break;
-            }
+        while (!verifyHeight()) {
+            invalidCount++;
         }
 
         verifyAndFixInvalidTrackPattern();
+
+        return invalidCount;
     }
 
-    private boolean verifyHeight(int[] direction) {
+    private boolean verifyHeight() {
         Location prevLocation = entries.getFirst().location.clone();
 
         for (RailEntry entry : entries) {
@@ -185,7 +224,7 @@ public class CommandCreateRails implements CommandExecutor {
         if (fullTest)
         {
             //noinspection ConstantConditions
-            entries.forEach(entry -> loc.getWorld().getBlockAt(entry.location.getBlockX(), entry.location.getBlockY() + 1, entry.location.getBlockZ()).setType(Material.AIR));
+            otherEntries.forEach(entry -> loc.getWorld().getBlockAt(entry.location.getBlockX(), entry.location.getBlockY(), entry.location.getBlockZ()).setType(entry.prevMaterial));
         }
 
         //noinspection ConstantConditions
@@ -195,7 +234,14 @@ public class CommandCreateRails implements CommandExecutor {
     private void buildRoute() {
         entries.forEach(entry -> {
             entry.location.getBlock().setType(Material.REDSTONE_BLOCK);
-            entry.location.clone().add(0, 1, 0).getBlock().setType(Material.POWERED_RAIL);
+
+            Location l = entry.location.clone().add(0, 1, 0);
+            otherEntries.add(new RailEntry(l, l.getBlock().getType(), null));
+            l.getBlock().setType(Material.POWERED_RAIL);
+
+            Location l2 = entry.location.clone().add(0, 2, 0);
+            otherEntries.add(new RailEntry(l2, l2.getBlock().getType(), null));
+            l2.getBlock().setType(Material.AIR);
         });
     }
 
@@ -232,5 +278,14 @@ public class CommandCreateRails implements CommandExecutor {
     private void notify(Object o, Player p) {
         Log.d(o);
         p.sendMessage(o.toString());
+    }
+
+    public void sendActionBar(Player p, double progress, String title) {
+        if (progress == -1) {
+            p.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent(ChatColor.BLUE + title));
+            return;
+        }
+
+        p.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent(ChatColor.BLUE + "Progress " + title + ": " + Math.round(progress * 100)+ "%"));
     }
 }
