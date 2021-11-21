@@ -247,6 +247,10 @@ public class CommandCreateRails implements CommandExecutor {
             Location l2 = entry.location.clone().add(0, 2, 0);
             otherEntries.add(new RailEntry(l2, l2.getBlock().getType(), null));
             l2.getBlock().setType(Material.AIR);
+
+            Location l3 = entry.location.clone().add(0, 3, 0);
+            otherEntries.add(new RailEntry(l3, l3.getBlock().getType(), null));
+            l3.getBlock().setType(Material.AIR);
         });
     }
 
