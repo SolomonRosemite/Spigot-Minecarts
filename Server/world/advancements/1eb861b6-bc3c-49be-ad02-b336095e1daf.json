@@ -287,6 +287,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/oak_wood": {
+    "criteria": {
+      "has_log": "2021-11-21 15:11:47 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/stone_button": {
     "criteria": {
       "has_stone": "2021-11-20 16:17:55 +0100"
@@ -422,6 +428,7 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:cold_ocean": "2021-11-20 18:03:27 +0100",
+      "minecraft:jungle_edge": "2021-11-21 14:58:48 +0100",
       "minecraft:snowy_mountains": "2021-11-20 18:09:01 +0100",
       "minecraft:forest": "2021-11-19 17:51:56 +0100",
       "minecraft:mountains": "2021-11-19 23:49:08 +0100",
@@ -433,11 +440,15 @@
       "minecraft:taiga_hills": "2021-11-20 18:11:37 +0100",
       "minecraft:desert": "2021-11-21 12:28:51 +0100",
       "minecraft:frozen_river": "2021-11-20 18:08:46 +0100",
+      "minecraft:jungle": "2021-11-21 14:47:07 +0100",
       "minecraft:birch_forest": "2021-11-20 17:48:31 +0100",
+      "minecraft:snowy_beach": "2021-11-21 14:50:39 +0100",
+      "minecraft:bamboo_jungle": "2021-11-21 14:48:29 +0100",
       "minecraft:beach": "2021-11-19 17:51:41 +0100",
       "minecraft:dark_forest": "2021-11-20 18:04:15 +0100",
       "minecraft:river": "2021-11-19 17:52:05 +0100",
       "minecraft:lukewarm_ocean": "2021-11-19 21:44:09 +0100",
+      "minecraft:snowy_taiga": "2021-11-21 14:50:52 +0100",
       "minecraft:birch_forest_hills": "2021-11-20 18:00:48 +0100",
       "minecraft:wooded_mountains": "2021-11-19 23:49:34 +0100",
       "minecraft:wooded_hills": "2021-11-19 17:52:58 +0100",

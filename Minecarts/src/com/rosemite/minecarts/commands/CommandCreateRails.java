@@ -14,6 +14,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
@@ -30,6 +31,7 @@ public class CommandCreateRails implements CommandExecutor {
     private final Material currentMaterial = Material.POLISHED_BASALT;
     private final boolean fullTest = true;
     @SuppressWarnings("FieldCanBeLocal")
+//    private final int distance = 1000 * 4;
     private final int distance = 1000 * 10;
     public Location loc;
     Minecarts plugin;
@@ -110,25 +112,28 @@ public class CommandCreateRails implements CommandExecutor {
     }
 
     private void finalizeTrack(Player p) {
-        long startTime = System.currentTimeMillis();
         new BukkitRunnable() {
             public void run() {
+                long startTime = System.currentTimeMillis();
                 sendActionBar(p, -1, "Verifying track");
 
                 int invalidCount = verifyAndFix();
                 Log.d("Count: " + invalidCount);
 
                 sendActionBar(p, -1, "Building track");
-//                if (fullTest)
-//                    buildRoute();
-//                else
-//                    testBuild();
+
+                if (fullTest)
+                    buildRoute();
+                else
+                    testBuild();
+
                 sendActionBar(p, -1, "Completed track!");
+
+                long stopTime = System.currentTimeMillis();
+                long elapsedTime = stopTime - startTime;
+                Log.d("Time: " +elapsedTime);
             }
         }.runTask(plugin);
-        long stopTime = System.currentTimeMillis();
-        long elapsedTime = stopTime - startTime;
-        Log.d("Time: " +elapsedTime);
     }
 
     private RailEntry calculateRailPath(Location startingLocation, int[] direction, RailEntry prevEntry) {
